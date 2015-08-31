@@ -1,0 +1,261 @@
+<?php
+
+require_once("dompdf/dompdf_config.inc.php");
+
+
+$codigoHTML = '<html>
+    <head>          
+    </head>
+    <body>
+        <style>
+            html {
+                margin: 0;
+            }
+            body {
+                font-family: "Times New Roman", serif;
+                margin: 10mm 8mm 2mm 8mm;
+                
+            }
+            
+            td.check{
+               border: #000 1px solid;
+               
+            }
+            
+            p.bordes{
+                border: #000 1px solid;
+            }
+            td{
+            font-size: 13px;
+            }
+        </style>
+        
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="2"><img src="../images/photo.jpg"></td>
+                    <td colspan="3" style="font-weight: bold; font-size:14;">ANEXO <br>
+                MEDICIONES POR EFECTUAR Y EQUIPOS A UTILIZAR PARA INSPECCIONES REALIZADAS BAJO EL REGLAMENTO TÉCNICO DE INSTALACIONES ELECTRICAS- RETIE</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="4">&nbsp;</td>
+                </tr>
+               
+            </tbody>
+        </table>
+
+<br>
+                <table border="1"  >
+                 <tbody>
+                        <tr>
+                            <td rowspan="2">ítem</td>
+                            <td rowspan="2">Tipo de Medida</td>
+                            <td rowspan="2">Exigencias del RETIE</td>
+                            <td rowspan="2">Equipos a utilizar</td>
+                            <td rowspan="2">Proceso en el que aplica</td>
+                            <td colspan="2">ENERGIZADO</td>
+                            <td rowspan="2">CUMPLE SI</td>
+                            
+                        </tr>
+                   
+                    
+                        <tr >
+                            
+                            <td>SI</td>
+                            <td>NO</td>
+                        
+                            
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Resistencia de puesta a tierra</td>
+                            <td>Artículo 15 RETIE; Sección 250 NTC 2050.</td>
+                            <td>1.Telurómetro<br>
+                                2.Equipo de inyección de corriente <br>
+                                3.Pinzas de inyección y medida.</td>
+                            <td>1.Uso Final <br>
+                                2.Distribución<br>
+                                3.Transformación </td>
+                            <td></td>
+                            <td>X</td>
+                            <td WIDTH="300px"><img src="../images/anexo1.png" /> <br>CUMPLE  SI:  Las medidas encontradas no superan los valores indicados
+                            <br><br> <b>Observaciones</b><br>En donde haya cable de guarda, este debe ser desconectado o usar un telurómetro de Alta Frecuencia (25 kHz).</td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Corriente del sistema de Tiera</td>
+                            <td>Artículo 9 RETIE</td>
+                            <td>Pinza con rango mA</td>
+                            <td>1.Uso Final <br>
+                                2.Distribución<br>
+                                3.Transformación </td>
+                            <td>X</td>
+                            <td></td>
+                            <td WIDTH="300px"><img src="../images/anexo2.png" /> <br> CUMPLE  SI:  Las corrientes de tierra no puedan inducir potenciales  que generen corrientes de no superan los valores indicados
+                            <br><br> <b>Observaciones</b><br>En instalaciones energizadas se debe medir la corriente en el sistema de puesta a tierra. El parámetro de corriente al interior del sistema de puesta a tierra, dependerá de la evaluación del nivel de riesgo de la instalación, tal como lo indica el Artículo 9 del RETIE.  </td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Equipotencialidad y continuidad en conductores de puesta a tierra</td>
+                            <td>Artículo 15.3.3 RETIE, Sección 250 NTC 2050</td>
+                            <td>Ohmímetro.</td>
+                            <td>1.Uso Final <br>
+                                2.Distribución<br>
+                                3.Transformación </td>
+                            <td></td>
+                            <td>X</td>
+                            <td>Marca continuidad e equipotencialidad (  R=0   ),  entre Tierra y carcazas de tableros y equipos,  entre Tierra y Neutro, entre todos los sistemas puestos a tierra, en terminales de tierra de los tomas
+                             <br><br> <b>Observaciones</b><br>Verificar la continuidad eléctrica entre el sistema de puesta a tierra y todas las estructuras metálicas y equipos eléctricos asociados al sistema eléctrico inspeccionado</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Distancias de seguridad para puntos energizados. ESPACIOS DE TRABAJO</td>
+                            <td>Artículo 13 RETIE, Artículo 29.4, 29.5 RETIE, Sección 110 NTC 2050</td>
+                            <td>1.Cinta métrica<br>
+                                2.Pértiga <br>
+                                3.Telémetro<br>
+                                4. Medidor de distancia.
+                            </td>
+                            <td>1.Uso Final <br>
+                                2.Distribución<br>
+                                3.Transformación </td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>MENOS DE 150 V = <br>
+                                VERTICAL = no debe ser inferior a 1,9 m de altura (medidos verticalmente desde el piso o plataforma) o la altura del equipo cuando este sea más alto HORIZONTAL =  0,75 m de ancho o el ancho del equipo si este es mayor. 
+                                FRENTE AL EQUIPO:  La profundidad del espacio de trabajo frente al equipo no debe ser inferior a 0,9 m. 
+                                <br><br>    
+                                ENTRE 2500 V y 9000 V = <br>
+                                VERTICAL no debe ser inferior a 1,9 m de altura (medidos verticalmente desde el piso o plataforma)  o la altura del equipo cuando este sea más alto HORIZONTAL: 0,9 m de ancho o el ancho del equipo si este es mayor. 
+                                FRENTE AL EQUIPO : la profundidad del espacio de trabajo no debe ser inferior a 1,5 m. 
+                                <br><br>
+                                Cuando se tengan equipos con un ancho superior a 1,8 m y una corriente nominal igual o superior a 1200 amperios, se deben tener dos (2) accesos al espacio de trabajo. En todo caso, se debe asegurar que el trabajador pueda evacuar el sitio. Se permitirá un solo acceso, cuando el ancho del espacio de trabajo sea de al menos el doble
+                            
+                             <br><br> <b>Observaciones</b><br>1. Los conductores denominados cubiertos o semi-aislados y sin pantalla (cable ecológico) deben ser considerados conductores desnudos para efectos de distancias de seguridad.
+                                A menos que se indique lo contrario, todas las distancias de seguridad deben ser medidas de superficie a superficie. 
+                                Para la medición de distancias de seguridad, los accesorios metálicos normalmente energizados serán considerados como parte de los conductores de línea y las bases metálicas de los terminales del cable o los dispositivos similares, deben ser tomados como parte de la estructura de soporte</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Distancias de seguridad de las construcciones a  Redes energizadas</td>
+                            <td>Artículo 13 RETIE,  Sección 110 NTC 2050</td>
+                            <td>1.Cinta métrica<br>
+                                2.Pértiga <br>
+                                3.Telémetro<br>
+                                4. Medidor de distancia.
+                            </td>
+                            <td>1.Uso Final <br>
+                                2.Distribución<br>
+                                3.Transformación </td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td WIDTH="300px"><img src="../images/anexo3.png" /> <br>
+                            <br><br> <b>Observaciones</b><br>1. Los conductores denominados cubiertos o semi-aislados y sin pantalla (cable ecológico) deben ser considerados conductores desnudos para efectos de distancias de seguridad.
+                                A menos que se indique lo contrario, todas las distancias de seguridad deben ser medidas de superficie a superficie. 
+                                Para la medición de distancias de seguridad, los accesorios metálicos normalmente energizados serán considerados como parte de los conductores de línea y las bases metálicas de los terminales del cable o los dispositivos similares, deben ser tomados como parte de la estructura de soporteF</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>ZONAS DE SERVIDUMBRE</td>
+                            <td>RETIE 22.2 </td>
+                            <td>1.Cinta métrica<br>
+                                2.Telémetro<br>
+                                3. Medidor de distancia.
+                            </td>
+                            <td>1.Uso Final <br>
+                                2.Distribución<br>
+                                3.Transformación </td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td WIDTH="300px"><img src="../images/anexo6.png" /> <br>
+                             <br><br> <b>Observaciones</b><br>No se deben construir edificios, edificaciones, viviendas, casetas o cualquier tipo de estructuras para albergar personas o animales. Tampoco se debe permitir alta concentración de personas en estas áreas de servidumbre, o la presencia permanente de trabajadores o personas ajenas a la operación o mantenimiento de la línea, ni el uso permanente de estos espacios como lugares de parqueo, o reparación de vehículos o para el desarrollo de actividades comerciales o recreacionales</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Resistencia de aislamiento</td>
+                            <td>Numeral 20.23.4 RETIE.</td>
+                            <td>Meghómetro</td>
+                            <td>1.Uso Final <br>
+                                2.Distribución<br>
+                                3.Transformación </td>
+                            <td></td>
+                            <td>X</td>
+                            <td>Realizar las pruebas de aislamiento: Las mediciones deben ser realizadas usando un megómetro a una tensión de por lo menos 500 Vcc. El valor de la resistencia de aislamiento debe ser no menor de 1000 Ω/V
+                             <br><br> <b>Observaciones</b><br>1. La resistencia de aislamiento debe ser superior a 1 M-Ohm, cuando las tensiones de prueba sean de 500 o 1000 VDC, como procedimiento válido para esta medición se pueden seguir las consideraciones y parámetros de la norma IEC 60364-6, numeral 61.3.3.
+                                <br>2. Esta medición se realiza para instalaciones de menos de 1000 V. Para tensiones mayores se deberá seguir las normas y procedimientos apropiados para realizar esta prueba y el equipo apropiado para el nivel de tensión.
+                                <br>3. Estas medidas se efectúan en circuitos sin tensión, es decir desconectados de su fuente de alimentación habitual, ya que en caso contrario se podría averiar el probador de baja tensión del equipo.
+                                <br>4. La medición de resistencia de aislamiento se realiza en:
+                                <br>* En el 100% de las instalaciones (acometidas y alimentadores), excepto en circuitos ramales de alumbrado y tomas para los cuales se definirán los porcentajes de muestreo en la guía técnica específica para este propósito.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Niveles de iluminación</td>
+                            <td>Articulo 17  RETIE</td>
+                            <td>Luxómetro</td>
+                            <td>"1.Uso Final
+                                <br>2.Transformación: S/E interiores,
+                                Exteriores, patio de maniobras.
+
+                            </td>
+                            <td>X</td>
+                            <td></td>
+                            <td>En los lugares en los que estén situados los equipos de emergencia como extintores y camillas, en las instalaciones de protección contra incendios de utilización manual y en los tableros de distribución del alumbrado, la iluminancia horizontal será mínimo de 5 lux a la altura del plano de uso.  
+                                <br>Las rutas de evacuación deben estar claramente visibles, señalizadas e iluminadas con un sistema autónomo con batería, con un mínimo de: 5 lux y 40% de uniformidad y un máximo del 20% de deslumbramiento, aún en condiciones de humo o plena oscuridad.   
+                             <br><br> <b>Observaciones</b><br>1. En las medidas de iluminación, los valores registrados con los luxómetros deben ser tomados sobre las áreas o puestos de trabajo o en su defecto por lo menos a 0,75 m o 0,80 m de altura del suelo. Estos valores no deben ser afectados por iluminación natural externa. El nivel exigido para la inspección será el mínimo valor indicado en el numeral 17,1    RETIE.
+                                <br>2. Exigencias y metodología del RETILAP</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Campo eléctrico y magnético.</td>
+                            <td>Articulo 14 RETIE</td>
+                            <td>1.Medidor de campo Eléctrico
+                                <br>2.Medidor de campo magnético (Gausímetro)</td>
+                            <td>1. Uso Final<br>
+                                2.Distribución<br>
+                                3.Transformación<br>
+                                4.Transmisión<br>
+                                5.Generación</td>
+                            <td>X</td>
+                            <td></td>
+                            <td WIDTH="300px"><img src="../images/anexo4.png" /> <br>CUMPLE  SI:  Las medidas encontradas no superan los valores indicados
+                             <br><br> <b>Observaciones</b><br>Se deben presentar los cálculos de acuerdo con el RETIE, Tabla 14,1, en los casos en los que aplique y se debe medir en subestaciones y redes de media y alta tensión energizados, cuando se encuentren en cercanías de centros de alta concentración de personas o cuando se detecte la existencia de altas corrientes para flujo magnético y altas tensiones para campos eléctricos, luego de la energización.</td>
+
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Ensayo de interruptores GFCI</td>
+                            <td>Artículo 37.2 RETIE.</td>
+                            <td>Probador de polaridad con disparo de protección.</td>
+                            <td>1.Uso Final</td>
+                            <td>X</td>
+                            <td></td>
+                            <td>El toma GFCI funciona de acuerdo a lo indicado.  Encendido verde del probador
+                             <br><br> <b>Observaciones</b><br>1. Los tomacorrientes GFCI deben:
+                                <br>* Ser certificados para tal uso
+                                <br>* Poseer una señal que indique su funcionamiento y mecanismo que verifique su adecuada operación
+                                <br>* Se verificara su instalación y su conexión en el circuito destinado para estos.
+                                <br>* La prueba se debe realizar con el circuito energizado y con el equipo apropiado.
+                                <br>* Para el uso de circuitos con tomas GFCI que controlen otras tomas sin esta característica, se verificara que esta operación sea aceptada y certificada por el fabricante.</td>
+                        </tr>
+                    </tbody>
+                </table>
+          
+
+    </body>
+</html>';
+
+
+
+
+$codigoHTML = utf8_decode($codigoHTML);
+$dompdf = new DOMPDF();
+$dompdf->set_paper("letter", "landscape");
+$dompdf->load_html($codigoHTML);
+ini_set("memory_limit", "128M");
+$dompdf->render();
+$dompdf->stream("DECLA" . $_POST["orden"] . ".pdf");
+?>

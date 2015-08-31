@@ -1,0 +1,451 @@
+<div class="col-md-12 fondo-blanco"> 
+    <!-- Task Widget -->
+
+    <br><br>
+            <div id="encabezado"  class="col-xs-12">
+
+                <div class="logop col-xs-3">
+                    <a href="#"><img src="images/photo.jpg"></a>
+                </div>
+                <div class="titulo col-xs-9">
+                    <h3 class="negrita">EVALUACIÓN PRELIMINAR EN EL SITIO PARA EJECUCIÓN DE LA INSPECCIÓN</h3>
+                    <div class="col-xs-12">
+
+                        <p>FECHA:FECHA: 2011-12-06					
+                            &nbsp;&nbsp;	
+                            VERSION:1 			
+                            &nbsp;&nbsp;	
+                            O/PS/R/01-15</p>
+                    </div>	
+                </div>	
+            </div>	
+            <form action="reporte/mediciones_campo.php" method="POST">
+                <!-- inicio  fecha-->
+                <div id="fecha" class="col-xs-12">
+
+                    <div class="col-xs-4">
+                        <br/>FECHA :&nbsp;<input type="date" name="fechar" id="fechar" /> 
+                    </div>
+                    <div class="col-xs-3"></div>
+
+
+                    <div class="col-xs-5">
+                        <br>ORDEN SERVICIO N°:
+                        <input type="text" name="orden" id="orden" />
+                    </div>
+                </div>
+                <br>
+                <!-- inicio preguntas-->
+                <div id="preguntas" class="margen col-xs-12">
+
+                    <table width="1121" border="1" class="tam-tabla" >
+                        <thead>
+                            <tr>
+                                <th width="85" rowspan="2">PUNTO DE MEDICION</th>
+                                <th width="88" rowspan="2">TIPO DE MEDICION</th>
+                                <th width="87" rowspan="2">EQUIPO UTILIZADO</th>
+                                <th width="73" rowspan="2">UNIDAD</th>
+                                <th colspan="5">MEDICIONES</th>
+                                <th width="89" rowspan="2">PROMEDIO</th>
+                                <th width="30" rowspan="2">N</th>
+                                <th width="30" rowspan="2">D</th>
+                                <th width="94" rowspan="2">CONFORME</th>
+                                <th width="94" rowspan="2"><p>NO CONFORME</p></th>
+                        <th width="157" rowspan="2">OBSERVACIONES</th>
+                        </tr>
+                        <tr>
+                            <th width="40"><em>X1</em></th>
+                            <th width="40"><em>X2</em></th>
+                            <th width="40"><em>X3</em></th>
+                            <th width="40"><em>X4</em></th>
+                            <th width="40"><em>X5</em></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr >
+                                <td align="center" ><input name="p1" type="text" id="p1" size="10" /></td>
+                                <td align="center" ><input name="t1" type="text" id="t1" size="10" /></td>
+                                <td align="center" ><input name="e1" type="text" id="e1" size="10" /></td>
+                                <td align="center" ><input name="u1" type="text" id="u1" size="10" /></td>
+                                <td align="center" ><input name="xa1" type="text" id="xa1"  size="5" /></td>
+                                <td align="center" ><input name="xb1" type="text" id="xb1"  size="5" /></td>
+                                <td align="center" ><input name="xc1" type="text" id="xc1"  size="5" /></td>
+                                <td align="center" ><input name="xd1" type="text" id="xd1"  size="5" /></td>
+                                <td align="center" ><input name="xe1" type="text" id="xe1"  size="5" /></td>
+                                <td align="center" ><input name="pr1" type="text" id="pr1"  size="10" /></td>
+                                <td align="center" ><input name="n1" type="text" id="n1"  size="5" /></td>
+                                <td align="center" ><input name="d1" type="text" id="d1"  size="5" /></td>
+                                <td align="center" ><input name="c1" type="radio" value="SI" checked id="c1"/></td>
+                                <td align="center" ><input name="c1" type="radio" value="NO" id="c1"/></td>
+                                <td><textarea class="text-area-tabla" id="o1" name="o1"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p2" type="text" id="p2" size="10" /></td>
+                                <td align="center" ><input name="t2" type="text" id="t2" size="10" /></td>
+                                <td align="center" ><input name="e2" type="text" id="e2" size="10" /></td>
+                                <td align="center" ><input name="u2" type="text" id="u2" size="10" /></td>
+                                <td align="center" ><input name="xa2" type="text" id="xa2"  size="5" /></td>
+                                <td align="center" ><input name="xb2" type="text" id="xb2"  size="5" /></td>
+                                <td align="center" ><input name="xc2" type="text" id="xc2"  size="5" /></td>
+                                <td align="center" ><input name="xd2" type="text" id="xd2"  size="5" /></td>
+                                <td align="center" ><input name="xe2" type="text" id="xe2"  size="5" /></td>
+                                <td align="center" ><input name="pr2" type="text" id="pr2"  size="10" /></td>
+                                <td align="center" ><input name="n2" type="text" id="n2"  size="5" /></td>
+                                <td align="center" ><input name="d2" type="text" id="d2"  size="5" /></td>
+                                <td align="center" ><input name="c2" type="radio" value="SI" checked id="c2"/></td>
+                                <td align="center" ><input name="c2" type="radio" value="NO" id="c2"/></td>
+                                <td><textarea class="text-area-tabla" id="o2" name="o2"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p3" type="text" id="p3" size="10" /></td>
+                                <td align="center" ><input name="t3" type="text" id="t3" size="10" /></td>
+                                <td align="center" ><input name="e3" type="text" id="e3" size="10" /></td>
+                                <td align="center" ><input name="u3" type="text" id="u3" size="10" /></td>
+                                <td align="center" ><input name="xa3" type="text" id="xa3"  size="5" /></td>
+                                <td align="center" ><input name="xb3" type="text" id="xb3"  size="5" /></td>
+                                <td align="center" ><input name="xc3" type="text" id="xc3"  size="5" /></td>
+                                <td align="center" ><input name="xd3" type="text" id="xd3"  size="5" /></td>
+                                <td align="center" ><input name="xe3" type="text" id="xe3"  size="5" /></td>
+                                <td align="center" ><input name="pr3" type="text" id="pr3"  size="10" /></td>
+                                <td align="center" ><input name="n3" type="text" id="n3"  size="5" /></td>
+                                <td align="center" ><input name="d3" type="text" id="d3"  size="5" /></td>
+                                <td align="center" ><input name="c3" type="radio" value="SI" checked id="c3"/></td>
+                                <td align="center" ><input name="c3" type="radio" value="NO" id="c3"/></td>
+                                <td><textarea class="text-area-tabla" id="o3" name="o3"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p4" type="text" id="p4" size="10" /></td>
+                                <td align="center" ><input name="t4" type="text" id="t4" size="10" /></td>
+                                <td align="center" ><input name="e4" type="text" id="e4" size="10" /></td>
+                                <td align="center" ><input name="u4" type="text" id="u4" size="10" /></td>
+                                <td align="center" ><input name="xa4" type="text" id="xa4"  size="5" /></td>
+                                <td align="center" ><input name="xb4" type="text" id="xb4"  size="5" /></td>
+                                <td align="center" ><input name="xc4" type="text" id="xc4"  size="5" /></td>
+                                <td align="center" ><input name="xd4" type="text" id="xd4"  size="5" /></td>
+                                <td align="center" ><input name="xe4" type="text" id="xe4"  size="5" /></td>
+                                <td align="center" ><input name="pr4" type="text" id="pr4"  size="10" /></td>
+                                <td align="center" ><input name="n4" type="text" id="n4"  size="5" /></td>
+                                <td align="center" ><input name="d4" type="text" id="d4"  size="5" /></td>
+                                <td align="center" ><input name="c4" type="radio" value="SI" checked id="c4"/></td>
+                                <td align="center" ><input name="c4" type="radio" value="NO" id="c4"/></td>
+                                <td><textarea class="text-area-tabla" id="o4" name="o4"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p5" type="text" id="p5" size="10" /></td>
+                                <td align="center" ><input name="t5" type="text" id="t5" size="10" /></td>
+                                <td align="center" ><input name="e5" type="text" id="e5" size="10" /></td>
+                                <td align="center" ><input name="u5" type="text" id="u5" size="10" /></td>
+                                <td align="center" ><input name="xa5" type="text" id="xa5"  size="5" /></td>
+                                <td align="center" ><input name="xb5" type="text" id="xb5"  size="5" /></td>
+                                <td align="center" ><input name="xc5" type="text" id="xc5"  size="5" /></td>
+                                <td align="center" ><input name="xd5" type="text" id="xd5"  size="5" /></td>
+                                <td align="center" ><input name="xe5" type="text" id="xe5"  size="5" /></td>
+                                <td align="center" ><input name="pr5" type="text" id="pr5"  size="10" /></td>
+                                <td align="center" ><input name="n5" type="text" id="n5"  size="5" /></td>
+                                <td align="center" ><input name="d5" type="text" id="d5"  size="5" /></td>
+                                <td align="center" ><input name="c5" type="radio" value="SI" checked id="c5"/></td>
+                                <td align="center" ><input name="c5" type="radio" value="NO" id="c5"/></td>
+                                <td><textarea class="text-area-tabla" id="o5" name="o5"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p6" type="text" id="p6" size="10" /></td>
+                                <td align="center" ><input name="t6" type="text" id="t6" size="10" /></td>
+                                <td align="center" ><input name="e6" type="text" id="e6" size="10" /></td>
+                                <td align="center" ><input name="u6" type="text" id="u6" size="10" /></td>
+                                <td align="center" ><input name="xa6" type="text" id="xa6"  size="5" /></td>
+                                <td align="center" ><input name="xb6" type="text" id="xb6"  size="5" /></td>
+                                <td align="center" ><input name="xc6" type="text" id="xc6"  size="5" /></td>
+                                <td align="center" ><input name="xd6" type="text" id="xd6"  size="5" /></td>
+                                <td align="center" ><input name="xe6" type="text" id="xe6"  size="5" /></td>
+                                <td align="center" ><input name="pr6" type="text" id="pr6"  size="10" /></td>
+                                <td align="center" ><input name="n6" type="text" id="n6"  size="5" /></td>
+                                <td align="center" ><input name="d6" type="text" id="d6"  size="5" /></td>
+                                <td align="center" ><input name="c6" type="radio" value="SI" checked id="c6"/></td>
+                                <td align="center" ><input name="c6" type="radio" value="NO" id="c6"/></td>
+                                <td><textarea class="text-area-tabla" id="o6" name="o6"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p7" type="text" id="p7" size="10" /></td>
+                                <td align="center" ><input name="t7" type="text" id="t7" size="10" /></td>
+                                <td align="center" ><input name="e7" type="text" id="e7" size="10" /></td>
+                                <td align="center" ><input name="u7" type="text" id="u7" size="10" /></td>
+                                <td align="center" ><input name="xa7" type="text" id="xa7"  size="5" /></td>
+                                <td align="center" ><input name="xb7" type="text" id="xb7"  size="5" /></td>
+                                <td align="center" ><input name="xc7" type="text" id="xc7"  size="5" /></td>
+                                <td align="center" ><input name="xd7" type="text" id="xd7"  size="5" /></td>
+                                <td align="center" ><input name="xe7" type="text" id="xe7"  size="5" /></td>
+                                <td align="center" ><input name="pr7" type="text" id="pr7"  size="10" /></td>
+                                <td align="center" ><input name="n7" type="text" id="n7"  size="5" /></td>
+                                <td align="center" ><input name="d7" type="text" id="d7"  size="5" /></td>
+                                <td align="center" ><input name="c7" type="radio" value="SI" checked id="c7"/></td>
+                                <td align="center" ><input name="c7" type="radio" value="NO" id="c7"/></td>
+                                <td><textarea class="text-area-tabla" id="o7" name="o7"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p8" type="text" id="p8" size="10" /></td>
+                                <td align="center" ><input name="t8" type="text" id="t8" size="10" /></td>
+                                <td align="center" ><input name="e8" type="text" id="e8" size="10" /></td>
+                                <td align="center" ><input name="u8" type="text" id="u8" size="10" /></td>
+                                <td align="center" ><input name="xa8" type="text" id="xa8"  size="5" /></td>
+                                <td align="center" ><input name="xb8" type="text" id="xb8"  size="5" /></td>
+                                <td align="center" ><input name="xc8" type="text" id="xc8"  size="5" /></td>
+                                <td align="center" ><input name="xd8" type="text" id="xd8"  size="5" /></td>
+                                <td align="center" ><input name="xe8" type="text" id="xe8"  size="5" /></td>
+                                <td align="center" ><input name="pr8" type="text" id="pr8"  size="10" /></td>
+                                <td align="center" ><input name="n8" type="text" id="n8"  size="5" /></td>
+                                <td align="center" ><input name="d8" type="text" id="d8"  size="5" /></td>
+                                <td align="center" ><input name="c8" type="radio" value="SI" checked id="c8"/></td>
+                                <td align="center" ><input name="c8" type="radio" value="NO" id="c8"/></td>
+                                <td><textarea class="text-area-tabla" id="o8" name="o8"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p9" type="text" id="p9" size="10" /></td>
+                                <td align="center" ><input name="t9" type="text" id="t9" size="10" /></td>
+                                <td align="center" ><input name="e9" type="text" id="e9" size="10" /></td>
+                                <td align="center" ><input name="u9" type="text" id="u9" size="10" /></td>
+                                <td align="center" ><input name="xa9" type="text" id="xa9"  size="5" /></td>
+                                <td align="center" ><input name="xb9" type="text" id="xb9"  size="5" /></td>
+                                <td align="center" ><input name="xc9" type="text" id="xc9"  size="5" /></td>
+                                <td align="center" ><input name="xd9" type="text" id="xd9"  size="5" /></td>
+                                <td align="center" ><input name="xe9" type="text" id="xe9"  size="5" /></td>
+                                <td align="center" ><input name="pr9" type="text" id="pr9"  size="10" /></td>
+                                <td align="center" ><input name="n9" type="text" id="n9"  size="5" /></td>
+                                <td align="center" ><input name="d9" type="text" id="d9"  size="5" /></td>
+                                <td align="center" ><input name="c9" type="radio" value="SI" checked id="c9"/></td>
+                                <td align="center" ><input name="c9" type="radio" value="NO" id="c9"/></td>
+                                <td><textarea class="text-area-tabla" id="o9" name="o9"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p10" type="text" id="p10" size="10" /></td>
+                                <td align="center" ><input name="t10" type="text" id="t10" size="10" /></td>
+                                <td align="center" ><input name="e10" type="text" id="e10" size="10" /></td>
+                                <td align="center" ><input name="u10" type="text" id="u10" size="10" /></td>
+                                <td align="center" ><input name="xa10" type="text" id="xa10"  size="5" /></td>
+                                <td align="center" ><input name="xb10" type="text" id="xb10"  size="5" /></td>
+                                <td align="center" ><input name="xc10" type="text" id="xc10"  size="5" /></td>
+                                <td align="center" ><input name="xd10" type="text" id="xd10"  size="5" /></td>
+                                <td align="center" ><input name="xe10" type="text" id="xe10"  size="5" /></td>
+                                <td align="center" ><input name="pr10" type="text" id="pr10"  size="10" /></td>
+                                <td align="center" ><input name="n10" type="text" id="n10"  size="5" /></td>
+                                <td align="center" ><input name="d10" type="text" id="d10"  size="5" /></td>
+                                <td align="center" ><input name="c10" type="radio" value="SI" checked id="c10"/></td>
+                                <td align="center" ><input name="c10" type="radio" value="NO" id="c10"/></td>
+                                <td><textarea class="text-area-tabla" id="o10" name="o10"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p11" type="text" id="p11" size="10" /></td>
+                                <td align="center" ><input name="t11" type="text" id="t11" size="10" /></td>
+                                <td align="center" ><input name="e11" type="text" id="e11" size="10" /></td>
+                                <td align="center" ><input name="u11" type="text" id="u11" size="10" /></td>
+                                <td align="center" ><input name="xa11" type="text" id="xa11"  size="5" /></td>
+                                <td align="center" ><input name="xb11" type="text" id="xb11"  size="5" /></td>
+                                <td align="center" ><input name="xc11" type="text" id="xc11"  size="5" /></td>
+                                <td align="center" ><input name="xd11" type="text" id="xd11"  size="5" /></td>
+                                <td align="center" ><input name="xe11" type="text" id="xe11"  size="5" /></td>
+                                <td align="center" ><input name="pr11" type="text" id="pr11"  size="10" /></td>
+                                <td align="center" ><input name="n11" type="text" id="n11"  size="5" /></td>
+                                <td align="center" ><input name="d11" type="text" id="d11"  size="5" /></td>
+                                <td align="center" ><input name="c11" type="radio" value="SI" checked id="c11"/></td>
+                                <td align="center" ><input name="c11" type="radio" value="NO" id="c11"/></td>
+                                <td><textarea class="text-area-tabla" id="o11" name="o11"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p12" type="text" id="p12" size="10" /></td>
+                                <td align="center" ><input name="t12" type="text" id="t12" size="10" /></td>
+                                <td align="center" ><input name="e12" type="text" id="e12" size="10" /></td>
+                                <td align="center" ><input name="u12" type="text" id="u12" size="10" /></td>
+                                <td align="center" ><input name="xa12" type="text" id="xa12"  size="5" /></td>
+                                <td align="center" ><input name="xb12" type="text" id="xb12"  size="5" /></td>
+                                <td align="center" ><input name="xc12" type="text" id="xc12"  size="5" /></td>
+                                <td align="center" ><input name="xd12" type="text" id="xd12"  size="5" /></td>
+                                <td align="center" ><input name="xe12" type="text" id="xe12"  size="5" /></td>
+                                <td align="center" ><input name="pr12" type="text" id="pr12"  size="10" /></td>
+                                <td align="center" ><input name="n12" type="text" id="n12"  size="5" /></td>
+                                <td align="center" ><input name="d12" type="text" id="d12"  size="5" /></td>
+                                <td align="center" ><input name="c12" type="radio" value="SI" checked id="c12"/></td>
+                                <td align="center" ><input name="c12" type="radio" value="NO" id="c12"/></td>
+                                <td><textarea class="text-area-tabla" id="o12" name="o12"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p13" type="text" id="p13" size="10" /></td>
+                                <td align="center" ><input name="t13" type="text" id="t13" size="10" /></td>
+                                <td align="center" ><input name="e13" type="text" id="e13" size="10" /></td>
+                                <td align="center" ><input name="u13" type="text" id="u13" size="10" /></td>
+                                <td align="center" ><input name="xa13" type="text" id="xa13"  size="5" /></td>
+                                <td align="center" ><input name="xb13" type="text" id="xb13"  size="5" /></td>
+                                <td align="center" ><input name="xc13" type="text" id="xc13"  size="5" /></td>
+                                <td align="center" ><input name="xd13" type="text" id="xd13"  size="5" /></td>
+                                <td align="center" ><input name="xe13" type="text" id="xe13"  size="5" /></td>
+                                <td align="center" ><input name="pr13" type="text" id="pr13"  size="10" /></td>
+                                <td align="center" ><input name="n13" type="text" id="n13"  size="5" /></td>
+                                <td align="center" ><input name="d13" type="text" id="d13"  size="5" /></td>
+                                <td align="center" ><input name="c13" type="radio" value="SI" checked id="c13"/></td>
+                                <td align="center" ><input name="c13" type="radio" value="NO" id="c13"/></td>
+                                <td><textarea class="text-area-tabla" id="o13" name="o13"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p14" type="text" id="p14" size="10" /></td>
+                                <td align="center" ><input name="t14" type="text" id="t14" size="10" /></td>
+                                <td align="center" ><input name="e14" type="text" id="e14" size="10" /></td>
+                                <td align="center" ><input name="u14" type="text" id="u14" size="10" /></td>
+                                <td align="center" ><input name="xa14" type="text" id="xa14"  size="5" /></td>
+                                <td align="center" ><input name="xb14" type="text" id="xb14"  size="5" /></td>
+                                <td align="center" ><input name="xc14" type="text" id="xc14"  size="5" /></td>
+                                <td align="center" ><input name="xd14" type="text" id="xd14"  size="5" /></td>
+                                <td align="center" ><input name="xe14" type="text" id="xe14"  size="5" /></td>
+                                <td align="center" ><input name="pr14" type="text" id="pr14"  size="10" /></td>
+                                <td align="center" ><input name="n14" type="text" id="n14"  size="5" /></td>
+                                <td align="center" ><input name="d14" type="text" id="d14"  size="5" /></td>
+                                <td align="center" ><input name="c14" type="radio" value="SI" checked id="c14"/></td>
+                                <td align="center" ><input name="c14" type="radio" value="NO" id="c14"/></td>
+                                <td><textarea class="text-area-tabla" id="o14" name="o14"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p15" type="text" id="p15" size="10" /></td>
+                                <td align="center" ><input name="t15" type="text" id="t15" size="10" /></td>
+                                <td align="center" ><input name="e15" type="text" id="e15" size="10" /></td>
+                                <td align="center" ><input name="u15" type="text" id="u15" size="10" /></td>
+                                <td align="center" ><input name="xa15" type="text" id="xa15"  size="5" /></td>
+                                <td align="center" ><input name="xb15" type="text" id="xb15"  size="5" /></td>
+                                <td align="center" ><input name="xc15" type="text" id="xc15"  size="5" /></td>
+                                <td align="center" ><input name="xd15" type="text" id="xd15"  size="5" /></td>
+                                <td align="center" ><input name="xe15" type="text" id="xe15"  size="5" /></td>
+                                <td align="center" ><input name="pr15" type="text" id="pr15"  size="10" /></td>
+                                <td align="center" ><input name="n15" type="text" id="n15"  size="5" /></td>
+                                <td align="center" ><input name="d15" type="text" id="d15"  size="5" /></td>
+                                <td align="center" ><input name="c15" type="radio" value="SI" checked id="c15"/></td>
+                                <td align="center" ><input name="c15" type="radio" value="NO" id="c15"/></td>
+                                <td><textarea class="text-area-tabla" id="o15" name="o15"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p16" type="text" id="p16" size="10" /></td>
+                                <td align="center" ><input name="t16" type="text" id="t16" size="10" /></td>
+                                <td align="center" ><input name="e16" type="text" id="e16" size="10" /></td>
+                                <td align="center" ><input name="u16" type="text" id="u16" size="10" /></td>
+                                <td align="center" ><input name="xa16" type="text" id="xa16"  size="5" /></td>
+                                <td align="center" ><input name="xb16" type="text" id="xb16"  size="5" /></td>
+                                <td align="center" ><input name="xc16" type="text" id="xc16"  size="5" /></td>
+                                <td align="center" ><input name="xd16" type="text" id="xd16"  size="5" /></td>
+                                <td align="center" ><input name="xe16" type="text" id="xe16"  size="5" /></td>
+                                <td align="center" ><input name="pr16" type="text" id="pr16"  size="10" /></td>
+                                <td align="center" ><input name="n16" type="text" id="n16"  size="5" /></td>
+                                <td align="center" ><input name="d16" type="text" id="d16"  size="5" /></td>
+                                <td align="center" ><input name="c16" type="radio" value="SI" checked id="c16"/></td>
+                                <td align="center" ><input name="c16" type="radio" value="NO" id="c16"/></td>
+                                <td><textarea class="text-area-tabla" id="o16" name="o16"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p17" type="text" id="p17" size="10" /></td>
+                                <td align="center" ><input name="t17" type="text" id="t17" size="10" /></td>
+                                <td align="center" ><input name="e17" type="text" id="e17" size="10" /></td>
+                                <td align="center" ><input name="u17" type="text" id="u17" size="10" /></td>
+                                <td align="center" ><input name="xa17" type="text" id="xa17"  size="5" /></td>
+                                <td align="center" ><input name="xb17" type="text" id="xb17"  size="5" /></td>
+                                <td align="center" ><input name="xc17" type="text" id="xc17"  size="5" /></td>
+                                <td align="center" ><input name="xd17" type="text" id="xd17"  size="5" /></td>
+                                <td align="center" ><input name="xe17" type="text" id="xe17"  size="5" /></td>
+                                <td align="center" ><input name="pr17" type="text" id="pr17"  size="10" /></td>
+                                <td align="center" ><input name="n17" type="text" id="n17"  size="5" /></td>
+                                <td align="center" ><input name="d17" type="text" id="d17"  size="5" /></td>
+                                <td align="center" ><input name="c17" type="radio" value="SI" checked id="c17"/></td>
+                                <td align="center" ><input name="c17" type="radio" value="NO" id="c17"/></td>
+                                <td><textarea class="text-area-tabla" id="o17" name="o17"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p18" type="text" id="p18" size="10" /></td>
+                                <td align="center" ><input name="t18" type="text" id="t18" size="10" /></td>
+                                <td align="center" ><input name="e18" type="text" id="e18" size="10" /></td>
+                                <td align="center" ><input name="u18" type="text" id="u18" size="10" /></td>
+                                <td align="center" ><input name="xa18" type="text" id="xa18"  size="5" /></td>
+                                <td align="center" ><input name="xb18" type="text" id="xb18"  size="5" /></td>
+                                <td align="center" ><input name="xc18" type="text" id="xc18"  size="5" /></td>
+                                <td align="center" ><input name="xd18" type="text" id="xd18"  size="5" /></td>
+                                <td align="center" ><input name="xe18" type="text" id="xe18"  size="5" /></td>
+                                <td align="center" ><input name="pr18" type="text" id="pr18"  size="10" /></td>
+                                <td align="center" ><input name="n18" type="text" id="n18"  size="5" /></td>
+                                <td align="center" ><input name="d18" type="text" id="d18"  size="5" /></td>
+                                <td align="center" ><input name="c18" type="radio" value="SI" checked id="c18"/></td>
+                                <td align="center" ><input name="c18" type="radio" value="NO" id="c18"/></td>
+                                <td><textarea class="text-area-tabla" id="o18" name="o18"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p19" type="text" id="p19" size="10" /></td>
+                                <td align="center" ><input name="t19" type="text" id="t19" size="10" /></td>
+                                <td align="center" ><input name="e19" type="text" id="e19" size="10" /></td>
+                                <td align="center" ><input name="u19" type="text" id="u19" size="10" /></td>
+                                <td align="center" ><input name="xa19" type="text" id="xa19"  size="5" /></td>
+                                <td align="center" ><input name="xb19" type="text" id="xb19"  size="5" /></td>
+                                <td align="center" ><input name="xc19" type="text" id="xc19"  size="5" /></td>
+                                <td align="center" ><input name="xd19" type="text" id="xd19"  size="5" /></td>
+                                <td align="center" ><input name="xe19" type="text" id="xe19"  size="5" /></td>
+                                <td align="center" ><input name="pr19" type="text" id="pr19"  size="10" /></td>
+                                <td align="center" ><input name="n19" type="text" id="n19"  size="5" /></td>
+                                <td align="center" ><input name="d19" type="text" id="d19"  size="5" /></td>
+                                <td align="center" ><input name="c19" type="radio" value="SI" checked id="c19"/></td>
+                                <td align="center" ><input name="c19" type="radio" value="NO" id="c19"/></td>
+                                <td><textarea class="text-area-tabla" id="o19" name="o19"></textarea></td>
+                            </tr>
+
+                            <tr >
+                                <td align="center" ><input name="p20" type="text" id="p20" size="10" /></td>
+                                <td align="center" ><input name="t20" type="text" id="t20" size="10" /></td>
+                                <td align="center" ><input name="e20" type="text" id="e20" size="10" /></td>
+                                <td align="center" ><input name="u20" type="text" id="u20" size="10" /></td>
+                                <td align="center" ><input name="xa20" type="text" id="xa20"  size="5" /></td>
+                                <td align="center" ><input name="xb20" type="text" id="xb20"  size="5" /></td>
+                                <td align="center" ><input name="xc20" type="text" id="xc20"  size="5" /></td>
+                                <td align="center" ><input name="xd20" type="text" id="xd20"  size="5" /></td>
+                                <td align="center" ><input name="xe20" type="text" id="xe20"  size="5" /></td>
+                                <td align="center" ><input name="pr20" type="text" id="pr20"  size="10" /></td>
+                                <td align="center" ><input name="n20" type="text" id="n20"  size="5" /></td>
+                                <td align="center" ><input name="d20" type="text" id="d20"  size="5" /></td>
+                                <td align="center" ><input name="c20" type="radio" value="SI" checked id="c20"/></td>
+                                <td align="center" ><input name="c20" type="radio" value="NO" id="c20"/></td>
+                                <td><textarea class="text-area-tabla" id="o20" name="o20"></textarea></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-xs-12">
+                    <div class="col-xs-6">
+                        <p>OBSERVACIONES</p>
+                        <textarea class="text-area" id="obs" name="obs"></textarea>
+                    </div>
+                    <br><br>
+                    <table>
+                        <tr>
+                            <td>FIRMA INSPECTOR: _______________________________________</td>
+                            <td>CONCEPTO:</td>
+                            <td><input type="radio" name="concepto" value="Aprobado" /></td>
+                            <td>Aproba</td>
+                            <td><input type="radio" name="concepto" value="Desaprobado" /></td>
+                            <td>No aprobado</td>
+                        </tr>
+                    </table> 
+                </div>
+                <br><br>
+                <input type="submit" class="btn btn-success" value="ENVIAR"/>
+            </form>
+        </div>
+
+<!-- end: .col-md-5-->

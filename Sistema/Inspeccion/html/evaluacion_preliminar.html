@@ -1,0 +1,317 @@
+ 
+<div class="col-md-12 fondo-blanco"> 
+     <br><br>
+            <!-- inicio encabezado -->
+            <div id="encabezado"  class="col-xs-12">
+
+                <div class="logop col-xs-3">
+                    <a href="#"><img src="images/photo.jpg"></a>
+                </div>
+                <div class="titulo col-xs-9">
+                    <h3 class="negrita">EVALUACION PRELIMINAR EN EL SITIO PARA EJECUCION DE LA INSPECCION </h3>
+                    <div class="col-xs-12">
+
+                        <p>FECHA:2014-10-07					
+                            &nbsp;&nbsp;	
+                            VERSION:3 			
+                            &nbsp;&nbsp;	
+                            O/PS/R/01-21</p>
+                    </div>	
+                </div>	
+            </div>	
+
+
+            <form action="reporte/evaluacion_preliminar.php" method="post">
+
+
+            <!-- inicio  fecha-->
+            <div id="fecha" class="col-xs-12">
+
+                <div class="col-xs-4">
+                    <br/>FECHA :&nbsp;<input type="date" class="" id="fechar" name="fechar" /> 
+                </div>
+                <div class="col-xs-3"></div>
+                <div class="col-xs-5">
+                    <br>ORDEN SERVICIO N°:
+                    <input type="text" id="orden" name="orden" />
+                </div>
+
+                <div class="col-xs-12">
+                    <br><br>LUGAR DE LA INSPECCION: <br><input type="text" class="tam-tabla" id="lugar" name="lugar"/>
+                </div>
+            </div>
+            <br>
+
+
+            <!-- inicio preguntas-->
+            <div id="preguntas" class="margen col-xs-12">
+                <table border="1" class=" tam-tabla" >
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th colspan="2" class="negrita">CUMPLE</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td class="negrita">Num. </td>
+                            <td class="negrita">Condiciones seguras y medioambientales en el sitio de inspección:</td>     
+                            <td class="negrita">SI</td>
+                            <td class="negrita">N.A.</td>                   
+                        </tr>
+                        <tr >
+                            <td>1</td>
+                            <td>Los equipos utilizados en la inspección son adecuados para el nivel de tensión</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g1"  name="g1"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g1"  name="g1"></td>                   
+                        </tr>
+                        <tr >
+                            <td>2</td>
+                            <td>Se tiene puesto el equipo de protección individual.</td> 
+                            <td class="centrado"><input type="radio" value="SI" id="g2"  name="g2"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g2"  name="g2"></td>                   
+                        </tr>
+                        <tr >
+                            <td>3</td>
+                            <td>Se ha despojado de todos los objetos metálicos. </td>    
+                            <td class="centrado"><input type="radio" value="SI" id="g3"  name="g3"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g3"  name="g3"></td>                   
+                        </tr>
+                        <tr >
+                            <td>4</td>
+                            <td>Se efectúa una inspección de los guantes.</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g4"  name="g4"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g4"  name="g4"></td>                   
+                        </tr>
+                        <tr >
+                            <td>5</td>
+                            <td>El inspector se encuentra en perfectas condiciones técnicas, físicas y síquicas para el desempeño de la labor encomendada. </td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g5"  name="g5"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g5"  name="g5"></td>                   
+                        </tr>
+                        <tr >
+                            <td>6</td>
+                            <td>No se deben realizar pruebas o mediciones directas a sistemas energizados por encima de 1000 voltios. </td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g6"  name="g6"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g6"  name="g6"></td>                   
+                        </tr>
+                        <tr >
+                            <td>7</td>
+                            <td>Se conoce el manejo adecuado de equipos y herramientas</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g7"  name="g7"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g7"  name="g7"></td>                   
+                        </tr>
+                        <tr >
+                            <td>8</td>
+                            <td>Se tiene conocimiento sobre los protocolos de trabajos seguros. </td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g8"  name="g8"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g8"  name="g8"></td>                   
+                        </tr>
+                        <tr >
+                            <td>9</td>
+                            <td>Una vez destapada la caja de inspección o subestación de sótano, el personal debe permanecer por fuera de ella, por lo menos durante 10 minutos, mientras las condiciones de ventilación son las adecuadas para iniciar el trabajo.</td>  
+                            <td class="centrado"><input type="radio" value="SI" id="g9"  name="g9"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g9"  name="g9"></td>                   
+                        </tr>
+                        <tr >
+                            <td>10</td>
+                            <td>Se verifica que los espacios de trabajo tengan las dimensiones adecuadas y no presenten obstáculos que pongan en riesgo al inspector </td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g10"  name="g10"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g10"  name="g10"></td>                   
+                        </tr>
+                        <tr >
+                            <td>11</td>
+                            <td>Se tiene autorización escrita o grabada para hacer el trabajo</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g11"  name="g11"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g11"  name="g11"></td>                   
+                        </tr>
+                        <tr >
+                            <td>12</td>
+                            <td>Se encuentra informado el Director técnico o supervisor de la fecha y  lugar de la inspección</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g12"  name="g12"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g12"  name="g12"></td>                   
+                        </tr>
+                        <tr >
+                            <td>13</td>
+                            <td>Tuvo instrucciones sobre condiciones especiales de trabajo</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g13"  name="g13"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g13"  name="g13"></td>                   
+                        </tr>
+                        <tr >
+                            <td>14</td>
+                            <td>Dispone de identificación adecuada para información en caso de accidente</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g14"  name="g14"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g14"  name="g14"></td>                   
+                        </tr>
+                        <tr >
+                            <td>15</td>
+                            <td>Se conoce y aplica las normas de seguridad en obras energizadas</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g15"  name="g15"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g15"  name="g15"></td>                   
+                        </tr>
+                        <tr >
+                            <td>16</td>
+                            <td>Se tiene un medio de comunicaciones</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g16"  name="g16"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g16"  name="g16"></td>                   
+                        </tr>
+                        <tr >
+                            <td>17</td>
+                            <td>Identifica y conoce los factores de riesgo y conoce los medios para proteger su integridad</td>     
+                            <td class="centrado"><input type="radio" value="SI" id="g17"  name="g17"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="g17"  name="g17"></td>                   
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="col-xs-12">	
+                <br>
+                <table border="1" class="f tam-tabla" >
+                    <thead>
+                        <tr >
+                            <th colspan="2" class="negrita">PELIGRO (Fuente o Situación)</th>
+
+                            <th colspan="2" class="negrita">CONSECUENCIAS</th>
+
+                        </tr>
+                    </thead>
+                    <tbody align="justify">
+                        <tr >
+                            <td>Riesgo Vial. Conducir con exceso de velocidad</td>
+                            <td class="centrado"><input type="checkbox"  id="r1"  name="r1"></td>     
+                            <td>Accidentes de transito, Fracturas laceraciones y fatalidades. Desplazamientos y/o Fracturas</td>
+                            <td class="centrado"><input type="checkbox"  id="p1"  name="p1"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Exposicion altos niveles de ruido por la operación y/o equipos  </td>
+                            <td class="centrado"><input type="checkbox"  id="r2"  name="r2"></td>     
+                            <td>Disminucion o perdida de la audicion, cansancio, cefalea, estrés, dolor de cabeza irritabilidad </td>
+                            <td class="centrado"><input type="checkbox"  id="p2"  name="p2"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Riesgo locativo. Terrenos irregulares. Caídas de Objetos.</td>
+                            <td class="centrado"><input type="checkbox"  id="r3"  name="r3"></td>     
+                            <td>Caidas, golpes, fracturas, luxaciones, confusiones</td>
+                            <td class="centrado"><input type="checkbox"  id="p3"  name="p3"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Riesgo electrico: Presencia de corriente mayor 25 mA, por el sistema puesta a tierra</td>
+                            <td class="centrado"><input type="checkbox"  id="r4"  name="r4"></td>     
+                            <td>Electrocución, quemaduras</td>
+                            <td class="centrado"><input type="checkbox"  id="p4"  name="p4"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Riesgo Operacional: Entrega de elementos energizados</td>
+                            <td class="centrado"><input type="checkbox"  id="r5"  name="r5"></td>     
+                            <td>Electrocucion, quemaduras</td>
+                            <td class="centrado"><input type="checkbox"  id="p5"  name="p5"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Presión por parte del cliente en cuanto al resultado de la Inspección. Riesgo de Orden Público.</td>
+                            <td class="centrado"><input type="checkbox"  id="r6"  name="r6"></td>     
+                            <td>Disminucion o perdida de la capacidad de trabajo, cansancio, cefalea, estrés, dolor de cabeza,  irritabilidad</td>
+                            <td class="centrado"><input type="checkbox"  id="p6"  name="p6"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Picadura de mosquitos, de culebra, abejas etc…</td>
+                            <td class="centrado"><input type="checkbox"  id="r7"  name="r7"></td>     
+                            <td>Disminucion o perdida de la capacidad de trabajo, cansancio, cefalea, estrés, dolor de cabeza,  irritabilidad</td>
+                            <td class="centrado"><input type="checkbox"  id="p7"  name="p7"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Exposición a rayos ultravioletas (sol y lámparas fluorescentes)</td>
+                            <td class="centrado"><input type="checkbox"  id="r8"  name="r8"></td>     
+                            <td>Quemaduras</td>
+                            <td class="centrado"><input type="checkbox"  id="p8"  name="p8"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Por aspiración o contaminación de gases</td>
+                            <td class="centrado"><input type="checkbox"  id="r9"  name="r9"></td>     
+                            <td>Asfixia mecánica, Intoxicación  </td>
+                            <td class="centrado"><input type="checkbox"  id="p9"  name="p9"></td>                   
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+
+            <div class="col-xs-12 margen">
+                <br>
+                <p class="negrita">Si falta algún SI, el trabajo NO debe realizarse, hasta efectuarse la correspondiente corrección <br><br>Disposición de los elementos de protección personal:</p>
+            </div>
+            <div class="col-xs-6">
+                <br>
+                <table border="0" class="f tam-tabla" >
+                    <thead>
+                        <tr >
+                            <th></th>
+
+                            <th colspan="2" class="negrita">APLICA</th>
+
+                        </tr>
+                    </thead>
+                    <tbody align="justify">
+                        <tr>
+                            <td class="negrita"></td>
+                            <td class="negrita">SI</td>
+                            <td class="negrita">NO</td>   
+                        </tr> 
+                        <tr >
+                            <td>Casco dieléctrico</td>
+                            <td class="centrado"><input type="radio" value="SI" id="e1"  name="e1"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="e1"  name="e1"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Barbuquejo</td>
+                            <td class="centrado"><input type="radio" value="SI" id="e2"  name="e2"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="e2"  name="e2"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Botas dieléctricas</td>
+                            <td class="centrado"><input type="radio" value="SI" id="e3"  name="e3"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="e3"  name="e3"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Guantes</td>
+                            <td class="centrado"><input type="radio" value="SI" id="e4"  name="e4"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="e4"  name="e4"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Tapa oídos</td>
+                            <td class="centrado"><input type="radio" value="SI" id="e5"  name="e5"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="e5"  name="e5"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Tapa boca</td>
+                            <td class="centrado"><input type="radio" value="SI" id="e6"  name="e6"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="e6"  name="e6"></td>                   
+                        </tr>
+                        <tr >
+                            <td>Gafas</td>
+                            <td class="centrado"><input type="radio" value="SI" id="e7"  name="e7"></td>
+                            <td class="centrado"><input type="radio" value="NO" checked  id="e7"  name="e7"></td>                   
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="col-xs-6">
+                <br>
+                <br>
+                <p>OTROS  -  OBSERVACIONES</p>
+                <textarea class="text-area" id="o1" name="o1"></textarea>
+            </div>
+            <br>
+            <div class="col-md-12">
+            <input type="submit" value="ENVIAR"/>
+            </div>
+            </form>
+            <div class="col-xs-12">
+                <br>
+                FIRMA INSPECTOR: _______________________________
+                <br>  
+            </div>
+        </div>
+
+   
+<!-- end: .col-md-5-->

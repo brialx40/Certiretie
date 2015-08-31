@@ -1,0 +1,196 @@
+<div class="col-md-12 fondo-blanco"> 
+     <br><br>
+            <!-- inicio encabezado -->
+            <div id="encabezado"  class="col-xs-12">
+
+                <div class="logop col-xs-3">
+                    <a href="#"><img src="images/photo.jpg"></a>
+                </div>
+                <div class="titulo col-xs-9">
+                    <h3 class="negrita">EVALUACION PRELIMINAR EN EL SITIO PARA EJECUCION DE LA INSPECCION </h3>
+                    <div class="col-xs-12">
+
+                        <p>FECHA: 2014-03-01					
+                            &nbsp;&nbsp;	
+                            VERSION:2 			
+                            &nbsp;&nbsp;	
+                            O/PS/R/01-4</p>
+                    </div>	
+                </div>	
+            </div>	
+
+
+
+            <form action="reporte/ordenServicio.php" method="post">
+            <!-- inicio  fecha-->
+            <div id="fecha" class="col-xs-12">
+
+                <div class="col-xs-4">
+                    <br/>FECHA :&nbsp;<input type="date" class="" id="fechar" name="fechar"/> 
+                </div>
+                <div class="col-xs-3"></div>
+
+
+                <div class="col-xs-5">
+                    <br>ORDEN SERVICIO N°:
+                    <input type="text" id="orden" name="orden"/>
+                </div>
+
+
+            </div>
+           
+
+            <br>
+
+
+            <!-- inicio preguntas-->
+            <div id="preguntas" class="margen col-xs-12">
+                <table width="996" border="0
+                       " class=" tam-tabla"  >
+                    <tbody>
+                        <tr >
+                            <td height="38" colspan="3" align="left" class="negrita"><strong>INFORMACION DEL INSPECTOR:</strong></td>
+                        </tr>
+                        <tr >
+                            <td width="434" height="212" align="center" class="negrita"><table border="0" class=" tam-tabla" >
+                                    <tbody>
+                                        <tr >
+                                            <td align="left" height="40px" class="negrita">NOMBRE:
+                                                <label for="nombre2" ></label></td>
+                                            <td align="center" class="negrita"><input type="text" id="infnombre" name="infnombre"></td>
+                                        </tr>
+                                        <tr >
+                                            <td height="40px">N° CEDULA :
+                                                <label for="cedula"></label></td>
+                                            <td align="center"><input type="text" id="infced" name="infced"></td>
+                                        </tr>
+                                        <tr >
+                                            <td>N° MATRICULA PROFESIONAL :
+                                                <label for="matricula"></label></td>
+                                            <td align="center"><input type="text" id="infmatri" name="infmatri"></td>
+                                        </tr>
+                                        <tr >
+                                            <td width="165" height="40px">N° TELEFONICO:</td>
+                                            <td width="253" align="center"><input type="text" id="inftel" name="inftel" ></td>
+                                        </tr>
+                                        <tr >
+                                            <td height="40px">DIRECCION:<br></td>
+                                            <td align="center"><label for="direccion"></label>
+                                                <input type="text" id="infdir" name="infdir" ></td>
+                                        </tr>
+                                        <tr >
+                                            <td height="40px">e-mail:</td>
+                                            <td align="center"><label for="correo"></label>
+                                                <input type="text" id="infemail" name="infemail"></td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                            <td width="53" align="center" class="negrita">&nbsp;</td>
+                            <td width="495" align="center" class="negrita"><table border="0" class=" tam-tabla" >
+                                    <tbody>
+                                        <tr align="left" valign="middle" >
+                                            <td width="60" height="40px" class="negrita">
+                                                    <label for="eps">EPS :</label>
+                                                </form></td>
+                                            <td width="206" class="negrita"><input type="text"   id="infeps" name="infeps" size="20" /></td>
+                                            <td width="50" align="right" class="negrita">
+                                                    <label for="arp2">ARP :</label>
+                                                </form></td>
+                                            <td width="161" class="negrita"><input type="text"   id="infarp" name="infarp" size="16" /></td>
+                                        </tr>
+                                        <tr >
+                                            <td colspan="2" height="40px">TIPO DE SANGRE:                            <label for="cedula"></label></td>
+                                            <td colspan="2" align="center"><input type="text"  id="infsangre" name="infsangre" ></td>
+                                        </tr>
+                                        <tr >
+                                            <td colspan="2" height="40px">EN CASO DE EMERGENCIA COMUNICARSE CON:                            <label for="matricula"></label></td>
+                                            <td colspan="2" align="center"><input type="text"  id="infcaso" name="infcaso" ></td>
+                                        </tr>
+                                        <tr >
+                                            <td colspan="2" height="40px">NOMBRE :
+                                                <label for="nombre4"></label></td>
+                                            <td colspan="2" align="center"><input type="text"  id="infnombre2" name="infnombre2" ></td>
+                                        </tr>
+                                        <tr >
+                                            <td colspan="2" height="40px">DIRECCION:</td>
+                                            <td colspan="2" align="center"><label for="direccion"></label>
+                                                <input type="text"  id="infdir2" name="infdir2" ></td>
+                                        </tr>
+                                        <tr >
+                                            <td colspan="2" height="40px">N° TELEFONICO:</td>
+                                            <td colspan="2" align="center"><label for="correo"></label>
+                                                <input type="text"  id="inftel2" name="inftel2" ></td>
+                                        </tr>
+                                    </tbody>
+                                </table></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <div class="col-xs-12">	<hr color="blue" size=3>
+                <p><b>INFORMACION DE LA OBRA:</b></p>
+                <p>&nbsp;</p>
+                <table width="730" border="0" class=" tam-tabla" >
+                    <tbody>
+                        <tr >
+                            <td height="40px">NOMBRE :
+                                <label for="nombre3"></label></td>
+                            <td align="center"><input type="text" name="nombre3" id="nombre3" /></td>
+                            <td align="left" class="negrita">&nbsp;</td>
+                            <td align="left" class="negrita">&nbsp;</td>
+                        </tr>
+                        <tr >
+                            <td height="40px">DIRECCION: <label for="cedula2"></label></td>
+                            <td align="center"><input type="text" name="cedula3" id="cedula3" /></td>
+                            <td align="left">&nbsp;</td>
+                            <td align="left">&nbsp;</td>
+                        </tr>
+                        <tr >
+                            <td height="40px">NOMBRE  PROPIETARIO :</td>
+                            <td align="center"><input type="text" name="nomp3" id="nomp3" /></td>
+                            <td width="148">N° TELEFONICO:</td>
+                            <td width="182" align="center"><input type="text" name="tel3" id="tel3" /></td>
+                        </tr>
+                        <tr >
+                            <td width="202" height="40px">NOMBRE CONTACTO :</td>
+                            <td width="180" align="center"><input type="text" name="nom3c" id="nom3c" /></td>
+                            <td>N° TELEFONICO:</td>
+                            <td align="center"><input type="text" name="tel4" id="tel4" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                <p><span class="col-xs-12">ALCANCE</span>                            
+                    <textarea name="alcance" class="text-area text-area-tabla" id="alcance"></textarea>
+                    <br />
+                <p><br>
+                <hr color="blue" size=3></p>
+                <p>TIEMPO DE EJECUCION DE LA INSPECCION</p>
+                <p>Tiempo mínimo de inspección en el sitio de la instalación domiciliaria o similar:   40 minutos.</p>
+                <p>TIEMPO TOTAL DE EJECUCION DE LA INSPECCION 
+                    <label for="min"></label>
+                    <input name="min" type="text" id="min" size="10" />
+                    min            </p>
+            </div>
+
+            
+            <div class="col-xs-12">
+                <p>&nbsp;</p>
+                <p>OTROS  -  OBSERVACIONES</p>
+                <textarea class="text-area text-area-tabla" id="o3" name="o3"></textarea>
+                <br>
+                <br>
+                <p>&nbsp;</p>
+            </div>
+
+            <div class="col-xs-12">
+                <br>
+                <strong>FIRMA GERENCIA :</strong> _______________________________  <strong>&nbsp;&nbsp;&nbsp;&nbsp;FIRMA INSPECTOR: </strong>_______________________________ <br>  
+                        <input type="submit" value="ENVIAR"/>
+
+            </div>
+            </form>
+        </div>
+
+<!-- end: .col-md-5-->

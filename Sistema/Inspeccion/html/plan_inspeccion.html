@@ -1,0 +1,954 @@
+<div class="col-md-12 fondo-blanco"> 
+ <br><br>
+            <!-- inicio encabezado -->
+            <div id="encabezado"  class="col-xs-12">
+                <div class="logop col-xs-3">
+                    <a href="#"><img src="images/photo.jpg"></a>
+                </div>
+                <div class="titulo col-xs-9">
+                    <h3 class="negrita">DATOS GENERALES DE LA OBRA Y PLANEACION DE LA INSPECCIÓN</h3>
+                    <div class="col-xs-12">
+                        <p>FECHA: 2014-06-20       				
+                            &nbsp;&nbsp;	
+                            VERSION:3 			
+                            &nbsp;&nbsp;	
+                            O/PS/R/01-2</p>
+                    </div>	
+                </div>	
+            </div><!-- /inicio encabezado -->	
+            <form action="reporte/plan_inspeccion.php" method="post">
+                <!-- inicio  fecha-->
+                <div id="fecha" class="col-xs-12">
+                    <div class="col-xs-4">
+                        <br/>FECHA :&nbsp;<input type="date" id="fechar" name="fechar"/> 
+                    </div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-5">
+                        <br>ORDEN SERVICIO N°:
+                        <input type="text" id="orden" name="orden" />
+                    </div>
+
+                    <div class="col-xs-12">
+                        <br>LUGAR DE LA INSPECCION: <br><input type="text" id="lugar" name="lugar" class="tam-tabla"/>
+                    </div>
+                    <br/><br/>
+                </div> <!-- /inicio fecha -->
+
+                <div class="col-xs-12">
+                    <!-- Contenido -->
+                    <table class=" tam-tabla">
+                        <thead>
+
+                        <td colspan="6"><br><b>1.INFORMACION GENERAL DE LA OBRA</b><br></td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PROPIETARIO:   
+                                </td>
+                                <td>
+                                    <input id="PROPIETARIO" name="PROPIETARIO" type="text">   
+                                </td>
+                                <td>
+                                    C.C. O NIT    
+                                </td>
+                                <td>
+                                    <input id="CC" name="CC" type="text">
+                                </td>
+                                <td>
+                                    NOMBRE DEL PROYECTO:   
+                                </td>
+                                <td>
+                                    <input id="NOMBREP" name="NOMBREP" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    DISEÑADOR: 
+                                </td>
+
+                                <td>
+                                    <input id="DISENADOR" name="DISENADOR" type="text">  
+                                </td>
+                                <td>
+                                    T.P.
+                                </td>
+                                <td>
+                                    <input id="TPDISENADOR" name="TPDISENADOR" type="text">
+                                </td>
+                                <td>
+                                    DIRECCION DEL PREDIO:
+                                </td>
+                                <td>
+                                    <input id="PREDIO" name="PREDIO" type="text">
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    CONSTRUCTOR:   
+                                </td>
+                                <td>
+                                    <input id="CONSTRUCTOR" name="CONSTRUCTOR" type="text">   
+                                </td>
+                                <td>
+                                    T.P.
+                                </td>
+                                <td>
+                                    <input id="TPCONSTRUCTOR" name="TPCONSTRUCTOR" type="text">
+                                </td>
+                                <td>
+                                    CIUDAD:
+                                </td>
+                                <td>
+                                    <input id="CIUDAD" name="CIUDAD" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    INTERVENTOR:    
+                                </td>
+                                <td>
+                                    <input id="INTERVENTOR" name="INTERVENTOR" type="text">   
+                                </td>
+                                <td>
+                                    T.P.
+                                </td>
+                                <td>
+                                    <input id="TPINTERVENTOR" name="TPINTERVENTOR" type="text">
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    TIPO DE OBRA:    
+                                </td>
+                                <td colspan="4" align="center">
+                                    RESIDENCIAL &nbsp;<input type="checkbox"  id="obra1"  name="obra1">&nbsp;&nbsp;&nbsp;
+                                    COMERCIAL &nbsp;<input type="checkbox" id="obra2"  name="obra2">&nbsp;&nbsp;&nbsp;
+                                    INSDUSTRIAL &nbsp;<input type="checkbox"  id="obra3"  name="obra3"> &nbsp;&nbsp;&nbsp;
+                                    USO ESPECIAL:
+                                    <input id="USOESPECIAL" name="USOESPECIAL" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    AREA:    
+                                </td>
+                                <td colspan="4">
+                                    <input type="checkbox"  id="area"  name="area"> 
+                                    <input size="4" id="area1" name="area1" type="text"> m2&nbsp;&nbsp;&nbsp;&nbsp;
+                                    LONGITUD <input type="checkbox" id="long"  name="long"> 
+                                    <input size="4" id="long1" name="long1" type="text"> m&nbsp;&nbsp;&nbsp;&nbsp;
+                                    POTENCIA INSTALADA  
+                                    <input  size="4"id="area3" name="area3" type="text"> KVA&nbsp;&nbsp;&nbsp;&nbsp;
+                                    TENSION  
+                                    <input size="4"id="area4" name="area4" type="text"> V
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td>
+                            </tr>
+                            <tr >
+
+
+                                <td colspan="6"><br><b>2. DETERMINACION EXIGENCIA DE RETILAP (INDICAR SI LA INSTALACION TIENE ALGUNA DE LAS SIGUIENTES CARACTERISTICAS)</b><br></td>
+
+                            </tr>
+                        </tbody>
+                    </table> 
+                    <br><br>
+                    <table class=" tam-tabla" border="1">
+                        <thead>
+
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td colspan="2" rowspan="2"></td>
+                                <td colspan="2">APLICA</td>  
+                            </tr>
+                            <tr>
+
+                                <td>SI</td>
+                                <td>NO</td>
+                            </tr>
+                            <tr>
+                                <td>1.&nbsp;</td>
+                                <td>Instalaciones de alumbrado público categorizadas en los niveles B y C del RETILAP (Mayor a 25 Luminarias o mayor a 1000m de Alumbrado Público)
+                                    610.2 del presente Anexo General.</td>
+                                <td><input type="radio" value="SI" id="p1"  name="p1" ></td>
+                                <td><input type="radio" value="NO" checked  id="p1"  name="p1" ></td>
+
+                            </tr>
+                            <tr>
+                                <td>2.&nbsp;</td>
+                                <td>Instalaciones de iluminación donde en una misma área cerrada y cubierta se puedan concentrar simultáneamente más de 50 personas, tales como almacenes, centros comerciales, sitios de recreación, espectáculos públicos, centros de salud, hospitales, clínicas, hoteles, auditorios, bibliotecas, estaciones y terminales de transporte, centros de reclusión. </td>
+                                <td><input type="radio" value="SI" id="p2"  name="p2"></td>
+                                <td><input type="radio" value="NO" checked  id="p2"  name="p2"></td>
+
+                            </tr>
+                            <tr>
+                                <td>3.&nbsp;</td>
+                                <td>Centros de enseñanza, salones de clase y laboratorios.</td>
+                                <td><input type="radio" value="SI" id="p3"  name="p3"></td>
+                                <td><input type="radio" value="NO" checked  id="p3"  name="p3"></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>4.&nbsp;</td>
+                                <td> Los sitios de esparcimiento tales como bares, discotecas, casinos donde se puedan concentrar más de 50 personas deben certificar plenamente los sistemas de alumbrado de emergencia, así como las condiciones de seguridad de las instalaciones de iluminación.</td>
+                                <td><input type="radio" value="SI" id="p4"  name="p4"></td>
+                                <td><input type="radio" value="NO" checked  id="p4"  name="p4"></td>
+
+                            </tr>
+                            <tr>
+                                <td>5.&nbsp;</td>
+                                <td>Edificaciones residenciales o similares objeto de una misma licencia o permiso de construcción donde se puedan concentrar más de 100 personas. En este caso la escogencia de las áreas a inspeccionar se podrá hacer usando las técnicas de muestreo recomendadas en procesos de certificación. La certificación será del conjunto o edificación</td>
+                                <td><input type="radio" value="SI" id="p5"  name="p5"></td>
+                                <td><input type="radio" value="NO" checked  id="p5"  name="p5"></td>
+
+                            </tr>
+                            <tr>
+                                <td>6.&nbsp;</td>
+                                <td> Viviendas individuales y comercios de áreas construidas mayores a 500 m2</td>
+                                <td><input type="radio" value="SI" id="p6"  name="p6"></td>
+                                <td><input type="radio" value="NO" checked  id="p6"  name="p6"></td>
+
+                            </tr>
+                            <tr>
+                                <td>7.&nbsp;</td>
+                                <td>Sistemas de iluminación de fachadas y monumentos y demás sitios de interés público.</td>
+                                <td><input type="radio" value="SI" id="p7"  name="p7"></td>
+                                <td><input type="radio" value="NO" checked  id="p7"  name="p7"></td>
+
+                            </tr>
+                            <tr>
+                                <td>8.&nbsp;</td>
+                                <td>Industria y oficinas con más de 30 puestos de trabajo o 500 m2 de área iluminada.</td>
+                                <td><input type="radio" value="SI" id="p8"  name="p8"></td>
+                                <td><input type="radio" value="NO" checked  id="p8"  name="p8"></td>
+
+                            </tr>
+                        </tbody>
+                    </table> 
+                    <br>
+                    <table class="tam-tabla">
+                        <thead>
+                        <td colspan="6"><br><b>3. DOCUMENTACION:</b><br></td>
+                        <td colspan="7"><br><br></td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" rowspan="2"></td>
+                                <td colspan="2">APLICA</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>SI</td>
+                                <td>NO</td>
+
+                            </tr>
+                            <tr>
+                                <td>1.1</td>
+                                <td>PLANOS</td>
+                                <td><input type="radio" value="SI" id="p11"  name="p11"></td>
+                                <td><input type="radio" value="NO" checked  id="p11"  name="p11"></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>1.2</td>
+                                <td>MEMORIAS DE CALCULO</td>
+                                <td><input type="radio" value="SI" id="p12"  name="p12"></td>
+                                <td><input type="radio" value="NO" checked  id="p12"  name="p12"></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>1.3</td>
+                                <td>CERTIFICADOS DE LOS PRODUCTOS</td>
+                                <td><input type="radio" value="SI" id="p13"  name="p13"></td>
+                                <td><input type="radio" value="NO" checked  id="p13"  name="p13"></td>
+
+                            </tr>
+                            <tr>
+                                <td>1.4</td>
+                                <td>MP DISEÑADOR</td>
+                                <td><input type="radio" value="SI" id="p14"  name="p14"></td>
+                                <td><input type="radio" value="NO" checked  id="p14"  name="p14"></td>
+
+                            </tr>
+                            <tr>
+                                <td>1.5</td>
+                                <td>MP CONSTRUCTOR</td>
+                                <td><input type="radio" value="SI" id="p15"  name="p15"></td>
+                                <td><input type="radio" value="NO" checked  id="p15"  name="p15"></td>
+
+                            </tr>
+                            <tr>
+                                <td>1.6</td>
+                                <td>MP INTERVENTOR</td>
+                                <td><input type="radio" value="SI" id="p16"  name="p16"></td>
+                                <td><input type="radio" value="NO" checked  id="p16"  name="p16"></td>
+
+                            </tr>
+                            <tr>
+                                <td>1.7</td>
+                                <td>DECLARACION DEL CONSTRUCTOR</td>
+                                <td><input type="radio" value="SI" id="p17"  name="p17"></td>
+                                <td><input type="radio" value="NO" checked  id="p17"  name="p17"></td>
+
+                            </tr>
+                            <tr>
+                                <td>1.8</td>
+                                <td>FORMATOS NECESARIOS PARA LLENAR EN OBRA:</td>
+                                <td><input type="radio" value="SI" id="p18"  name="p18"></td>
+                                <td><input type="radio" value="NO" checked  id="p18"  name="p18"></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <table class="tam-tabla" border="1">
+
+                        <tbody>
+
+                            <tr>
+                                <td colspan="2" rowspan="2"></td>
+                                <td colspan="2">APLICA</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>SI</td>
+                                <td>NO</td>
+
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-1</td>
+                                <td>Declaracion De Imparcialidad,Independencia,Conflictos De Interes Y Compromiso De Confidencialidad </td>
+                                <td><input type="radio" value="SI" id="r11"  name="r11"></td>
+                                <td><input type="radio" value="NO" checked  id="r11"  name="r11"></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-2</td>
+                                <td>Planeacion De La Inspeccion</td>
+                                <td><input type="radio" value="SI" id="r12"  name="r12"></td>
+                                <td><input type="radio" value="NO" checked  id="r12"  name="r12"></td>
+
+
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-3</td>
+                                <td>Lista De Verificacion Documental Del Proyecto</td>
+                                <td><input type="radio" value="SI" id="r13"  name="r13"></td>
+                                <td><input type="radio" value="NO" checked  id="r13"  name="r13"></td>
+
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-4</td>
+                                <td>Orden De Servicio Para Inspector</td>
+                                <td><input type="radio" value="SI" id="r14"  name="r14"></td>
+                                <td><input type="radio" value="NO" checked  id="r14"  name="r14"></td>
+
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-5</td>
+                                <td>Lista De Revision Del Diseño</td>
+                                <td><input type="radio" value="SI" id="r15"  name="r15"></td>
+                                <td><input type="radio" value="NO" checked  id="r15"  name="r15"></td>
+
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-6</td>
+                                <td>Lista De Verificacion Para Instalaciones Electricas De Uso Final Instalaciones Basicas</td>
+                                <td><input type="radio" value="SI" id="r16"  name="r16"></td>
+                                <td><input type="radio" value="NO" checked  id="r16"  name="r16"></td>
+
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-7</td>
+                                <td>Lista De Verificacion Para Instalaciones Electricas De Uso Final(Asistencia Medica)</td>
+                                <td><input type="radio" value="SI" id="r17"  name="r17"></td>
+                                <td><input type="radio" value="NO" checked  id="r17"  name="r17"></td>
+
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-8</td>
+                                <td>Lista De Verificacion Para Instalaciones Electricas De Uso Final(Minas)</td>
+                                <td><input type="radio" value="SI" id="r18"  name='r18'></td>
+                                <td><input type="radio" value="NO" checked  id="r18"  name='r18'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-9</td>
+                                <td>Lista De Verificacion Para Instalaciones Electricas De Transformaciones(Subestaciones)</td>
+                                <td><input type="radio" value="SI" id="r19"  name='r19'></td>
+                                <td><input type="radio" value="NO" checked  id="r19"  name='r19'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-10</td>
+                                <td>Lista De Verificacion Para Instalaciones Electricas De Distribucion</td>
+                                <td><input type="radio" value="SI" id="r110"  name='r110'></td>
+                                <td><input type="radio" value="NO" checked  id="r110"  name='r110'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-11</td>
+                                <td>Lista De Verificacion Para Instalaciones Electricas (Sistema De Proteccion De Rayos)</td>
+                                <td><input type="radio" value="SI" id="r111"  name='r111'></td>
+                                <td><input type="radio" value="NO" checked  id="r111"  name='r111'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-12</td>
+                                <td>Lista De Verificacion Para Instalaciones Electricas (Clasificacion De Lugares Peligrosos)</td>
+                                <td><input type="radio" value="SI" id="r112"  name='r112'></td>
+                                <td><input type="radio" value="NO" checked  id="r112"  name='r112'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-13</td>
+                                <td>Lista De Verificacion Para Instalaciones Electricas (Provisionales)</td>
+                                <td><input type="radio" value="SI" id="r113"  name='r113'></td>
+                                <td><input type="radio" value="NO" checked  id="r113"  name='r113'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-14</td>
+                                <td>Lista De Verificacion De Los Certificados De Los Materiales</td>
+                                <td><input type="radio" value="SI" id="r114"  name='r114'></td>
+                                <td><input type="radio" value="NO" checked  id="r114"  name='r114'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-15</td>
+                                <td>Lista De Verificacion De Los Resultados De Mediciones En Campo</td>
+                                <td><input type="radio" value="SI" id="r115"  name='r115'></td>
+                                <td><input type="radio" value="NO" checked  id="r115"  name='r115'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-16</td>
+                                <td>Lista De Verificacion De Los Resultados De Iluminacion</td>
+                                <td><input type="radio" value="SI" id="r116"  name='r116'></td>
+                                <td><input type="radio" value="NO" checked  id="r116"  name='r116'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-17</td>
+                                <td>Lista De Verificacion Del Reporte De No Conformidades y Acta De Visita</td>
+                                <td><input type="radio" value="SI" id="r117"  name='r117'></td>
+                                <td><input type="radio" value="NO" checked  id="r117"  name='r117'> </td>
+                            </tr>
+
+                            <tr>
+                                <td>O/PS/R/01-21</td>
+                                <td>Lista De Verificacion De Evaluacion Preliminar Del Sitio Para La Inspeccion</td>
+                                <td><input type="radio" value="SI" id="r121"  name='r121'></td>
+                                <td><input type="radio" value="NO" checked  id="r121"  name='r121'> </td>
+                            </tr>
+
+                            <tr>
+                                <td>O/PS/R/01-23</td>
+                                <td>Lista De Verificacion De Pruebas Funcionales</td>
+                                <td><input type="radio" value="SI" id="r123"  name='r123'></td>
+                                <td><input type="radio" value="NO" checked  id="r123"  name='r123'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-24</td>
+                                <td>Lista De Verificacion Uso Final   (Alta Concentracion De Personas)</td>
+                                <td><input type="radio" value="SI" id="r124"  name='r124'></td>
+                                <td><input type="radio" value="NO" checked  id="r124"  name='r124'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-25</td>
+                                <td>Lista De Verificacion Uso Final  (Edificaciones Prefabricadas)</td>
+                                <td><input type="radio" value="SI" id="r125"  name='r125'></td>
+                                <td><input type="radio" value="NO" checked  id="r125"  name='r125'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-26</td>
+                                <td>Lista De Verificacion Uso Final   (Edificios Para Usos Agricolas Y Pecuarios)</td>
+                                <td><input type="radio" value="SI" id="r126"  name='r126'></td>
+                                <td><input type="radio" value="NO" checked  id="r126"  name='r126'></td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-27</td>
+                                <td>Lista De Verificacion Uso Final   (Viviendas Vomiles, Vehiculos Recreativos, Remolques Estacionados)</td>
+                                <td><input type="radio" value="SI" id="r127"  name='r127'></td>
+                                <td><input type="radio" value="NO" checked  id="r127"  name='r127'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-28</td>
+                                <td>Lista De Verificacion Uso Final  (Casas Flotantes Y Palafilicas)</td>
+                                <td><input type="radio" value="SI" id="r128"  name='r128'></td>
+                                <td><input type="radio" value="NO" checked  id="r128"  name='r128'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-29</td>
+                                <td>Lista De Verificacion Uso Final  (Equipos  Especiales)</td>
+                                <td><input type="radio" value="SI" id="r129"  name='r129'></td>
+                                <td><input type="radio" value="NO" checked  id="r129"  name='r129'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-30</td>
+                                <td>Lista De Verificacion Uso Final   (Piscinas, Fuentes E Instalaciones Similares)</td>
+                                <td><input type="radio" value="SI" id="r130"  name='r130'></td>
+                                <td><input type="radio" value="NO" checked  id="r130"  name='r130'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-31</td>
+                                <td>Lista De Verificacion Uso Final  (Sistemas Contra Incendio)</td>
+                                <td><input type="radio" value="SI" id="r131"  name='r131'></td>
+                                <td><input type="radio" value="NO" checked  id="r131"  name='r131'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-32</td>
+                                <td>Lista De Verificacion Uso Final  (Sistemas De Emergencia)</td>
+                                <td><input type="radio" value="SI" id="r132"  name='r132'></td>
+                                <td><input type="radio" value="NO" checked  id="r132"  name='r132'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-33</td>
+                                <td>Lista De Verificacion Uso Final  (Cerca Electrica)</td>
+                                <td><input type="radio" value="SI" id="r133"  name='r133'></td>
+                                <td><input type="radio" value="NO" checked  id="r133"  name='r133'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-34</td>
+                                <td>Lista De Verificacion Uso Final    (Bandeja Portacable)</td>
+                                <td><input type="radio" value="SI" id="r134"  name='r134'></td>
+                                <td><input type="radio" value="NO" checked  id="r134"  name='r134'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-35</td>
+                                <td>Lista De Verificacion Uso Final   (Blindobarras)</td>
+                                <td><input type="radio" value="SI" id="r135"  name='r135'></td>
+                                <td><input type="radio" value="NO" checked  id="r135"  name='r135'> </td>
+                            </tr>
+                            <tr>
+                                <td>O/PS/R/01-36</td>
+                                <td>Lista De Verificacion Uso Final    (Duchas)</td>
+                                <td><input type="radio" value="SI" id="r136"  name='r136'></td>
+                                <td><input type="radio" value="NO" checked  id="r136"  name='r136'> </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <br>
+                    <table class="tam-tabla">
+                        <thead>
+                            <tr>
+                                <td colspan="6"><br><b>4. ALISTAR EQUIPOS</b><br></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" rowspan="2"></td>
+                                <td colspan="2">APLICA</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>SI</td>
+                                <td>NO</td>
+
+                            </tr>
+                            <tr>
+                                <td>3.1.1</td>
+                                <td>CAMARA FOTOGRAFICA</td>
+                                <td><input type="radio" value="SI" id="a311"  name="a311"></td>
+                                <td><input type="radio" value="NO" checked  id="a311"  name="a311"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.2</td>
+                                <td>FLEXOMETRO</td>
+                                <td><input type="radio" value="SI" id="a312"  name="a312"></td>
+                                <td><input type="radio" value="NO" checked  id="a312"  name="a312"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.3</td>
+                                <td>MEDIDOR DE CAMPO MAGNETICO</td>
+                                <td><input type="radio" value="SI" id="a313"  name="a313"></td>
+                                <td><input type="radio" value="NO" checked  id="a313"  name="a313"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.4</td>
+                                <td>MEDIDOR DE CAMPO ELECTRICO</td>
+                                <td><input type="radio" value="SI" id="a314"  name="a314"></td>
+                                <td><input type="radio" value="NO" checked  id="a314"  name="a314"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.5</td>
+                                <td>MEGOHMETRO</td>
+                                <td><input type="radio" value="SI" id="a315"  name="a315"></td>
+                                <td><input type="radio" value="NO" checked  id="a315"  name="a315"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.6</td>
+                                <td>TELUROMETRO</td>
+                                <td><input type="radio" value="SI" id="a316"  name="a316"></td>
+                                <td><input type="radio" value="NO" checked  id="a316"  name="a316"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.7</td>
+                                <td>LUXOMETRO</td>
+                                <td><input type="radio" value="SI" id="a317"  name="a317"></td>
+                                <td><input type="radio" value="NO" checked  id="a317"  name="a317"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.8</td>
+                                <td>PINZA AMPERIMETRICA</td>
+                                <td><input type="radio" value="SI" id="a318"  name="a318"></td>
+                                <td><input type="radio" value="NO" checked  id="a318"  name="a318"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.9</td>
+                                <td>VOLTIMETRO</td>
+                                <td><input type="radio" value="SI" id="a319"  name="a319"></td>
+                                <td><input type="radio" value="NO" checked  id="a319"  name="a319"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.10</td>
+                                <td>OTRO<input id="av3110" name="av3110" type="text"></td>
+                                <td><input type="radio" value="SI" id="a3110"  name="a3110"></td>
+                                <td><input type="radio" value="NO" checked  id="a3110"  name="a3110"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.1.11</td>
+                                <td>OTRO<input id="av3111" name="av3111" type="text"></td>
+                                <td><input type="radio" value="SI" id="a3111"  name="a3111"></td>
+                                <td><input type="radio" value="NO" checked  id="a3111"  name="a3111"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="6"><br><b>ORDEN EN LA EJECUCIÓN DE LA INSPECCIÓN :</b><br></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"><br><b>5. DISTRIBUCION:</b><br></td>
+                            </tr>
+
+                        <tbody>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" rowspan="2"></td>
+                                <td colspan="2">APLICA</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>SI</td>
+                                <td>NO</td>
+
+                            </tr>
+                            <tr>
+                                <td>3.1</td>
+                                <td>ESTRUCTURAS, APOYOS</td>
+                                <td><input type="radio" value="SI" id="d31"  name="d31"></td>
+                                <td><input type="radio" value="NO" checked  id="d31"  name="d31"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.2</td>
+                                <td>CONDUCTORES</td>
+                                <td><input type="radio" value="SI" id="d32"  name="d32"></td>
+                                <td><input type="radio" value="NO" checked  id="d32"  name="d32"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.3</td>
+                                <td>CAJAS DE INSPECCION</td>
+                                <td><input type="radio" value="SI" id="d33"  name="d33"></td>
+                                <td><input type="radio" value="NO" checked  id="d33"  name="d33"> </td>
+                            </tr>
+                            <tr>
+                                <td>3.4</td>
+                                <td>GABINETE</td>
+                                <td><input type="radio" value="SI" id="d34"  name="d34"></td>
+                                <td><input type="radio" value="NO" checked  id="d34"  name="d34"> </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td colspan="6"><br><b>6. SUBESTACIONES:</b><br></td>
+                            </tr>
+
+                        <tbody>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>4.1</td>
+                                <td>ACOMETIDA</td>
+                                <td><input type="radio" value="SI" id="s41"  name="s41"></td>
+                                <td><input type="radio" value="NO" checked  id="s41"  name="s41"> </td>
+                            </tr>
+                            <tr>
+                                <td>4.2</td>
+                                <td>CAJAS DE INSPECCION</td>
+                                <td><input type="radio" value="SI" id="s42"  name="s42"></td>
+                                <td><input type="radio" value="NO" checked  id="s42"  name="s42"> </td>
+                            </tr>
+                            <tr>
+                                <td>4.3</td>
+                                <td>TRANSFORMADOR</td>
+                                <td><input type="radio" value="SI" id="s43"  name="s43"></td>
+                                <td><input type="radio" value="NO" checked  id="s43"  name="s43"> </td>
+                            </tr>
+                            <tr>
+                                <td>4.4</td>
+                                <td>ENCERRAMIENTOS</td>
+                                <td><input type="radio" value="SI" id="s44"  name="s44"></td>
+                                <td><input type="radio" value="NO" checked  id="s44"  name="s44"> </td>
+                            </tr>
+                            <tr>
+                                <td>4.5</td>
+                                <td>EQUIPO DE MEDIDA</td>
+                                <td><input type="radio" value="SI" id="s45"  name="s45"></td>
+                                <td><input type="radio" value="NO" checked  id="s45"  name="s45"> </td>
+                            </tr>
+                            <tr>
+                                <td>4.6</td>
+                                <td>ALIMENTADOR EN BT</td>
+                                <td><input type="radio" value="SI" id="s46"  name="s46"></td>
+                                <td><input type="radio" value="NO" checked  id="s46"  name="s46"> </td>
+                            </tr>
+                        </tbody>
+                        <tr>
+                            <td colspan="2"><br><b>7. SISTEMA DE PROTECCION CONTRA RAYOS (SIPRA):</b><br></td>
+                            <td><input type="radio" value="SI" id="sp47"  name="sp47"></td>
+                            <td><input type="radio" value="NO" checked  id="sp47"  name="sp47"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br><b>8. SISTEMA DE PUESTA A TIERRA (SPT):</b><br></td>
+                            <td><input type="radio" value="SI" id="spt48"  name="spt48"></td>
+                            <td><input type="radio" value="NO" checked  id="spt48"  name="spt48"> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <br> 
+                            </td></tr>
+                        <tr>
+                            <td colspan="6"><br><b>9. TIPO DE INSTALACION USO FINAL:</b><br></td>
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2" rowspan="2"></td>
+                                <td colspan="2">APLICA</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>SI</td>
+                                <td>NO</td>
+
+                            </tr>
+                            <tr>
+                                <td><b>RESIDENCIAL:</b><input type="checkbox" id="residencial"  name="residencial"></td>
+                                <td>8.1 ACOMETIDA EN BT</td>
+                                <td><input type="radio" value="SI" id="res1"  name="res1"></td>
+                                <td><input type="radio" value="NO" checked  id="res1"  name="res1"> </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+
+                                <td>8.2 CAJAS DE INSPECCION</td>
+                                <td><input type="radio" value="SI" id="res2"  name="res2"></td>
+                                <td><input type="radio" value="NO" checked  id="res2"  name="res2"> </td>
+                            </tr>
+                            <tr><td></td>
+                                <td>8.3 GABINETE</td>
+                                <td><input type="radio" value="SI" id="res3"  name="res3"></td>
+                                <td><input type="radio" value="NO" checked  id="res3"  name="res3"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td></tr>
+                            <tr>
+                                <td><b>COMERCIAL:</b><input type="checkbox" id="COMERCIAL"  name="COMERCIAL"></td>
+                                <td>8.4 CIRCUITOS ALIMENTADORES</td>
+                                <td><input type="radio" value="SI" id="res4"  name="res4"></td>
+                                <td><input type="radio" value="NO" checked  id="res4"  name="res4"> </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+
+                                <td>8.5 TABLEROS DE DISTRIBUCION</td>
+                                <td><input type="radio" value="SI" id="res5"  name="res5"></td>
+                                <td><input type="radio" value="NO" checked  id="res5"  name="res5"> </td>
+                            </tr>
+                            <tr><td></td>
+                                <td>8.6 CIRCUITOS RAMALES</td>
+                                <td><input type="radio" value="SI" id="res6"  name="res6"></td>
+                                <td><input type="radio" value="NO" checked  id="res6"  name="res6"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td></tr>
+                            <tr>
+                                <td><b>INDUSTRIAL:</b><input type="checkbox" id="INDUSTRIAL"  name="INDUSTRIAL"></td>
+                                <td>8.7 ILUMINACION</td>
+                                <td><input type="radio" value="SI" id="res7"  name="res7"></td>
+                                <td><input type="radio" value="NO" checked  id="res7"  name="res7"> </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+
+                                <td>8.8 TOMACORRIENTES</td>
+                                <td><input type="radio" value="SI" id="res8"  name="res8"></td>
+                                <td><input type="radio" value="NO" checked  id="res8"  name="res8"> </td>
+                            </tr>
+                            <tr><td></td>
+                                <td>8.9 CIRCUITOS RAMALES</td>
+                                <td><input type="radio" value="SI" id="res9"  name="res9"></td>
+                                <td><input type="radio" value="NO" checked  id="res9"  name="res9"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <br> 
+                                </td></tr>
+                            <tr>
+                                <td><b>ESPECIAL TIPO:</b><input type="text" value="" id="ESPECIALTIPO" name="ESPECIALTIPO"><br></td><br>
+                        <td>8.10 USO DE EQUIPOS</td>
+                        <td><input type="radio" value="SI" id="res10"  name="res10"></td>
+                        <td><input type="radio" value="NO" checked  id="res10"  name="res10"> </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">OBSERVACIONES:<br><textarea name="obser" id="obser" class="text-area-tabla"></textarea></td>
+
+                            <td>* ACOMETIDA</td>
+                            <td><input type="radio" value="SI" id="ACOMETIDA"  name="ACOMETIDA"></td>
+                            <td><input type="radio" value="NO" checked  id="ACOMETIDA"  name="ACOMETIDA"> </td>
+                            </tr>
+
+                        <tr>
+                            <td>* BOMBA CONTRA INCENDIO</td>
+                            <td><input type="radio" value="SI" id="BOMBA"  name="BOMBA"></td>
+                            <td><input type="radio" value="NO" checked  id="BOMBA"  name="BOMBA"> </td>
+                            </tr>
+                        <tr>
+                            <td>* PLANTA DE EMERGENCIA</td>
+                            <td><input type="radio" value="SI" id="PLANTA"  name="PLANTA"></td>
+                            <td><input type="radio" value="NO" checked  id="PLANTA"  name="PLANTA"> </td>
+                            </tr>
+                        <tr>
+                            <td>* ILUMINACION DE EMERGENCIA</td>
+                            <td><input type="radio" value="SI" id="ILUMINACION"  name="ILUMINACION"></td>
+                            <td><input type="radio" value="NO" checked  id="ILUMINACION"  name="ILUMINACION"> </td>
+                            </tr>
+                        <tr>
+                            <td>* TRANSFERENCIA</td>
+                            <td><input type="radio" value="SI" id="TRANSFERENCIA"  name="TRANSFERENCIA"></td>
+                            <td><input type="radio" value="NO" checked  id="TRANSFERENCIA"  name="TRANSFERENCIA"> </td>
+                            </tr>
+                        <tr>
+                            <td>8.12 AREAS CLASIFICADAS COMO PELIGROSAS</td>
+                            <td><input type="radio" value="SI" id="res12"  name="res12"></td>
+                            <td><input type="radio" value="NO" checked  id="res12"  name="res12"> </td>
+                            </tr>
+                        <tr>
+                            <td>8.14 AREAS CLASIFICADAS COMO NO PELIGROSAS</td>
+                            <td><input type="radio" value="SI" id="res14"  name="res14"></td>
+                            <td><input type="radio" value="NO" checked  id="res14"  name="res14"> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <br>
+                    <table class="tam-tabla">
+                        <tbody>
+                            <tr>
+                                <td colspan="5" align="center">
+                                    NECESIDADES DE CAPACITACION
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    Según las características de la obra a inspeccionar considero que (x):
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" value="NO" checked  id="nec"  name="nec"> No necesito capacitación técnica y documental referente a la obra.
+                                </td>
+                                <td>
+                                    <input type="radio" value="SI" id="nec"  name="nec"> Necesito capacitación en los siguientes temas:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="2">OBSERVACIONES:<br><textarea name="obs" id="obs" class="text-area-tabla"></textarea></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <!-- /Contenido border:hidden;-->
+                
+                <br>
+                <br>
+                <div class="col-xs-12">
+                <input type="submit" value="ENVIAR"/>
+                </div>
+                </div>
+            </form>
+            <!-- firma inspector -->
+            <div class="col-xs-12">
+                <br>
+                FIRMA INSPECTOR: _______________________________
+                <br>  
+            </div><!-- /firma inspector -->
+
+        </div><!-- /panel body -->

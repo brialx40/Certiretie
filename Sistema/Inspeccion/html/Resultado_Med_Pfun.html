@@ -1,0 +1,663 @@
+
+<div class="col-md-12 fondo-blanco"> 
+     <br><br>
+                    <!-- inicio encabezado -->
+		    <div id="encabezado" class="col-xs-12">
+			
+            <div class="logop col-xs-3">
+				<a href="#"><img src="images/photo.jpg"></a>
+			</div>
+			<div class="titulo col-xs-9">
+			    <h3 class="negrita">RESULTADO DE MEDICIONES Y PRUEBAS FUNCIONALES  </h3>
+				<div class="col-xs-12">
+			    
+					<p>FECHA: 2014-06-20					
+							&nbsp;&nbsp;	
+					VERSION:0 			
+							&nbsp;&nbsp;	
+					O/PS/R/01-23</p>
+				</div>	
+			</div>	
+           </div>	
+					
+			
+			
+ <form action="reporte/resultado_medicion.php" method="post">
+		<!-- inicio  fecha-->
+         <div id="fecha" class="col-xs-12">
+            <div class="col-xs-8">
+                DIRECCION: <input type="text" name="direccion" id="direccion" class="tam-textarea">
+                <br>
+                ALCANCE: <input type="text" name="alcance" id="alcance" class="tam-textarea">
+            </div>
+
+            <div class="col-xs-4">
+                ORDEN SERVICIO N°:
+                <br><input type="text" name="orden" id="orden" class="tam-textarea">
+            </div>
+        </div>
+         <br>		
+		<!-- inicio preguntas-->
+        <div id="preguntas" class="margen col-xs-12">
+           <table border="1" class="tam-tabla">
+             <thead>
+                <tr>
+                    <th rowspan="2">ITEM</th>
+                    <th rowspan="2">ELEMENTO</th>
+                    <th rowspan="2">PRUEBA</th>
+                    <th rowspan="2">EQUIPO</th>
+                    <th rowspan="2">UNIDAD</th>
+                    <th colspan="2">CIRCUITO ENERGIZA</th>
+                    <th colspan="3">OPCIÓN</th>                        
+                    <th rowspan="2">OBSERVACIONES</th>       
+                </tr>
+                <tr>
+                    <td>SI</td>
+                    <td>NO</td>
+                    <td align="center"><img src="./images/check.png"/></td>
+                    <td>A.N.C</td>
+                    <td>N.A.</td>
+                </tr>
+            </thead>
+            <tbody align="justify">
+                <tr>
+                    <td class="fondoTablaVerde negrita" colspan="12">A. PRUEBAS FUNCIONALES</td>
+                    
+                </tr>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td rowspan="2">Interruptor</td>     
+                    <td>En ON marca continuidad</td>
+                    <td rowspan="2">OHMIMETRO</td>
+                    <td rowspan="2">OHM</td>
+                    <td rowspan="2" align="center">X</td>     
+                    <td rowspan="2" align="center">X</td>
+                    <td rowspan="2" align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g11"></td>
+                    <td rowspan="2" align="center"><input type="radio" value="A.N.C" name="g11"></td>
+                    <td rowspan="2" align="center"><input type="radio" value="N.A." checked  name="g11"></td>     
+                    <td rowspan="2" align="center"><textarea class="text-area-tabla" id="g1" name="g1"></textarea></td>
+                </tr>
+                <tr><td>En OFF marca abierto</td></tr>
+                <tr>
+                    <td>2</td>
+                    <td>Encendido de luminarias y/o otros equipos</td>     
+                    <td>Encendido y apagado de lámparas y otros equipos</td>
+                    <td>INSPECCION VISUAL</td>
+                    <td align="center"></td>
+                    <td>X</td>     
+                    <td align="center"></td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g21"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g21"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g21"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g2" name="g2"></textarea></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">3</td>
+                    <td rowspan="2">Toma GFCI</td>     
+                    <td>Verificación funcionamiento luz piloto</td>
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td align="center"></td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g311"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g311"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g311"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g31" name="g31"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Conexión equipotencial del punto de tierra con la tierra del TG, Subestación, Malla o General que se disponga </td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g321"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g321"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g321"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g32" name="g32"></textarea></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">4</td>
+                    <td rowspan="2">Tomas</td>     
+                    <td>Voltaje de salida</td>
+                    <td>VOLTIMETRO</td>
+                    <td>VOLTIOS</td>
+                    <td>X</td>     
+                    <td align="center"></td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g411"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g411"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g411"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g41" name="g41"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Conexión equipotencial del punto de tierra con la tierra del TG, Subestación, Malla o General que se disponga</td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g421"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g421"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g421"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g42" name="g42"></textarea></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Monitor  de aislamiento Hospitalarias</td>     
+                    <td>Prueba alarma circuitos de emergencia</td>
+                    <td>INSPECCION VISUAL Y AUDITIVA</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td align="center"></td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g51"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g51"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g51"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g5" name="g5"></textarea></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">6</td>
+                    <td rowspan="2">Transformador de aislamiento piscinas</td>     
+                    <td>Voltaje de salida</td>
+                    <td>VOLTIMETRO</td>
+                    <td>VOLTIOS</td>
+                    <td>X</td>     
+                    <td align="center"></td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g611"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g611"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g611"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g61" name="g61"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Continuidad eléctrica entre las fases antes y despues del transformador de aislamiento </td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g621"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g621"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g621"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g62" name="g62"></textarea></td>
+                </tr>
+                <tr>
+                    <td rowspan="10">7</td>
+                    <td rowspan="10">Celdas y Tableros</td>     
+                    <td>Verificar ajuste de las uniones mecánicas, eléctricas y de anclaje.</td>
+                    <td>E.P.P.</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g711"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g711"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g711"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g71" name="g71"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Verificar los enclavamientos mecánicos de los equipos del tablero.</td>
+                    <td>E.P.P.</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g721"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g721"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g721"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g72" name="g72"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Conexión a tierra de las puertas.</td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g731"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g731"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g731"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g73" name="g73"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Conexión equipotencial del punto de tierra con la tierra del TG, Subestación, Malla o General que se disponga</td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g741"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g741"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g741"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g74" name="g74"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Verificar cierre del tablero</td>
+                    <td>E.P.P.</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g751"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g751"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g751"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g75" name="g75"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Medir equipotencialidad entre partes conductoras del tablero.</td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g761"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g761"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g761"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g76" name="g76"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Funcionalidad de las rejillas de ventilación, las tapas laterales y las puertas.</td>
+                    <td>E.P.P.</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g771"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g771"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g771"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g77" name="g77"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Verificar los ajustes mecánicos y enclavamiento de los equipos del tablero y del tablero en general</td>
+                    <td>E.P.P.</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g781"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g781"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g781"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g78" name="g78"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Realizar las pruebas de aislamiento: Las mediciones deben ser realizadas usando un megómetro a una tensión de por lo menos 500 Vcc. El valor de la resistencia de aislamiento debe ser no menor de 1000 Ω/V.</td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g791"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g791"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g791"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g79" name="g79"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Todas las puertas de los equipos deben abrir a 90 grados</td>
+                    <td>E.P.P.</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g7101"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g7101"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g7101"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g710" name="g710"></textarea></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Iluminación de Emergencia</td>     
+                    <td>Encendido en ausencia de tension normal</td> 
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g81"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g81"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g81"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g8" name="g8"></textarea></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">9</td>
+                    <td rowspan="3">Puerta Cortafuego</td>     
+                    <td>Apertura antipánico</td>
+                    <td>N.A.</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g9111"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g9111"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g9111"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g91" name="g91"></textarea></td>
+                </tr>
+                  <tr>
+                    <td>Puerta abre hacia afuera</td>
+                    <td>N.A.</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g921"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g921"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g921"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g92" name="g92"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Encerramiento plenamente hermético de compuertas, empaques intumescentes de la puerta, sellos de ductos o cárcamos de entrada o salidas de cables</td>
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g931"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g931"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g931"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g93" name="g93"></textarea></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Dampers</td>     
+                    <td>Cierre hermetico al accionar fusible mecánico</td>
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g101"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g101"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g101"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g10" name="g10"></textarea></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">11</td>
+                    <td rowspan="3">Cajas de paso y/o lugares de ejecución de empalmes</td>     
+                    <td>Verificar ajuste de las uniones mecánicas</td>
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g1111"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g1111"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g1111"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g111" name="g111"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Verificar aislamiento de la conexión</td>
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g1121"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g1121"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g1121"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g112" name="g112"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Verificar continuidad eléctrica de los conductores</td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g1131"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g1131"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g1131"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g113" name="g113"></textarea></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">12</td>
+                    <td rowspan="3">Bandejas portacables</td>     
+                    <td>Verificar soporte mecánico, estabilidad y ajuste apoyos</td>
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g1211"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g1211"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g1211"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g121" name="g121"></textarea></td>
+                </tr>
+                <tr>
+                       
+                    <td>Verificar continuidad eléctrica de la bandeja</td>
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g1221"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g1221"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g1221"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g122" name="g122"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Conexión equipotencial del punto de tierra con la tierra del TG, Subestación, Malla o General que se disponga</td>
+                    <td>OHMIMETRO</td>
+                    <td>OHM</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g1231"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g1231"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g1231"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g123" name="g123"></textarea></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Canalizaciones</td>     
+                    <td>Las partes de canalizaciones que estén expuestas o a la vista, deben marcarse en franjas de color naranja de al menos 10 cm de anchas para distinguirlas de otros usos. </td>
+                    <td>INSPECCION VISUAL</td>
+                    <td>N.A.</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g131"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g131"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g131"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g13" name="g13"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="fondoTablaVerde negrita" colspan="12">A. MEDICIONES </td>
+                    
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td colspan="2">Resistencia de puesta a tierra</td>     
+                    <td>OHMIMETRO</td>
+                    <td>Ω</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g141"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g141"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g141"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g14" name="g14"></textarea></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td colspan="2">Corriente del sistema de Tiera</td>     
+                    <td>AMPERIMETRO</td>
+                    <td>AMPERIOS</td>
+                    <td>X</td>
+                    <td align="center"></td>     
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g151"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g151"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g151"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g15" name="g15"></textarea></td>
+                </tr>
+                <tr>                    
+                    <td>16</td>     
+                    <td colspan="2">Equipotencialidad y continuidad en conductores de puesta a tierra</td>
+                    <td>OHMIMETRO</td>
+                    <td>Ω</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g161"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g161"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g161"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g16" name="g16"></textarea></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td colspan="2">Distancias de seguridad para puntos energizados. ESPACIOS DE TRABAJO</td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g171"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g171"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g171"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g17" name="g17"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>18</td>     
+                    <td colspan="2">MENOS DE 150 V = <br>
+                     VERTICAL = no debe ser inferior a 1,9 m de altura (medidos verticalmente desde el piso o plataforma) o la altura del equipo cuando este sea más alto </td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g181"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g181"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g181"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g18" name="g18"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>19</td>     
+                    <td colspan="2">HORIZONTAL =  0,75 m de ancho o el ancho del equipo si este es mayor.</td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g191"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g191"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g191"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g19" name="g19"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>20</td>     
+                    <td colspan="2">FRENTE AL EQUIPO:  La profundidad del espacio de trabajo frente al equipo no debe ser inferior a 0,9 m. </td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g201"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g201"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g201"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g20" name="g20"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>21</td>     
+                    <td colspan="2">ENTRE 2500 V y 9000 V =<br> 
+                    VERTICAL no debe ser inferior a 1,9 m de altura (medidos verticalmente desde el piso o plataforma)  o la altura del equipo cuando este sea más alto </td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g211"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g211"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g211"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g21" name="g21"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>22</td>     
+                    <td colspan="2">HORIZONTAL: 0,9 m de ancho o el ancho del equipo si este es mayor. </td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g221"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g221"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g221"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g22" name="g22"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>23</td>     
+                    <td colspan="2">FRENTE AL EQUIPO : la profundidad del espacio de trabajo no debe ser inferior a 1,5 m. </td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g231"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g231"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g231"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g23" name="g23"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>24</td>     
+                    <td colspan="2">Distancias de seguridad de las construcciones a  Redes energizadas</td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g241"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g241"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g241"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g24" name="g24"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>25</td>     
+                    <td colspan="2">ZONAS DE SERVIDUMBRE</td>
+                    <td>METRO</td>
+                    <td>m</td>
+                    <td>X</td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g251"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g251"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g251"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g25" name="g25"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>26</td>     
+                    <td colspan="2">Resistencia de aislamiento</td>
+                    <td>MEGGER</td>
+                    <td>MΩ</td>
+                    <td align="center"></td>     
+                    <td>X</td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g261"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g261"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g261"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g26" name="g26"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>27</td>     
+                    <td colspan="2">Niveles de iluminación</td>
+                    <td>LUXOMETRO</td>
+                    <td>LUX</td>
+                    <td>X</td>     
+                    <td align="center"></td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g271"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g271"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g271"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g27" name="g27"></textarea></td>
+                </tr>
+                <tr>
+                    
+                    <td>28</td>     
+                    <td colspan="2">Campo eléctrico y magnético.</td>
+                    <td>MCEM</td>
+                    <td>KV/m, gauss</td>     
+                    <td>X</td>
+                    <td></td>
+                    <td align="center"><input type="radio" value='<img src="../images/check.png"/>' name="g281"></td>
+                    <td align="center"><input type="radio" value="A.N.C" name="g281"></td>
+                    <td align="center"><input type="radio" value="N.A." checked  name="g281"></td>  
+                    <td align="center"><textarea class="text-area-tabla" id="g28" name="g28"></textarea></td>
+                </tr>
+                
+		</tbody>
+        </table> 
+        </div>
+         <input type="submit" value="ENVIAR"/>
+ </form>
+        <div class="col-xs-12">
+        <br>
+        INSPECTOR:
+        <br>
+        FIRMA INSPECTOR: _______________________________
+        <br>  
+        </div>
+         
+                			
+
+
+              </div>
+              <!-- end: .col-md-5--></body></html>

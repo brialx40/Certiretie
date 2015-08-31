@@ -1,0 +1,443 @@
+<div class="col-md-12 fondo-blanco"> 
+    <!-- Task Widget -->
+
+    <br><br>
+            <!-- inicio encabezado -->
+            <div id="encabezado"  class="col-xs-3">
+
+                <a href="#"><img src="images/photo.jpg"></a>
+            </div>
+            <div class="titulo col-xs-9">
+                <h3 class="negrita">LISTA DE VERIFICACIÓN DE LOS MATERIALES </h3>
+                <div class="col-xs-12">	
+
+                </div>
+                <div class="col-xs-12">
+                    <div class="text-enc col-xs-5">
+                        <p>FECHA: 2015-01-26 </p> 					
+                    </div>
+                    <div class="text-enc col-xs-3">					
+                        <p>VERSION:7</p>				
+                    </div>
+                    <div class="text-enc col-xs-4">					
+                        <p> O/PS/R/01-14</p>
+                    </div>	
+                </div>		
+            </div>
+
+            <form action="reporte/materiales.php" method="post">
+                <!-- inicio  fecha-->
+                <div id="fecha" class="col-xs-12">
+                    <div class="col-xs-8">
+                        FECHA DE REVISION: <input type="date" id="fechar" name="fechar" />
+                        <br>
+                        APLICA: <img src="./images/check.png"/><br>
+                        APLICA Y NO CUMPLE: A.N.C <br>
+                        NO APLICA: N.A.
+                    </div>
+
+                    <div class="col-xs-4">
+                        ORDEN SERVICIO N°:
+                        <br><input type="text" id="orden" name="orden" class="tam-textarea"/>
+                    </div>
+                </div>
+                <br>
+
+                <!-- inicio preguntas-->
+                <div id="preguntas" class=" col-xs-12">
+                    <table  border="1" class="tam-tabla" >
+                        <thead>
+                            <tr>
+                                <th rowspan="2">ITEM</th>
+                                <th rowspan="2">PRODUCTO</th>
+                                <th rowspan="2">MARCA</th>
+                                <th rowspan="2">LUGAR</th>
+                                <th align="center" colspan="3">APLICA</th>
+                                <th rowspan="2">NUM DE CERTIFICADO</th>
+                                <th rowspan="2">CERTIFICADO POR</th>
+                                <th rowspan="2">VALIDO</th>
+                                <th colspan="2">ESTADO DEL PRODUCTO</th>
+                                <th rowspan="2">ROTULO</th>
+                            </tr>
+                            <tr>
+
+                                <td width="19" height="18" align="center"><img src="./images/check.png" width="19" height="18"/></td>
+                                <td>A.N.C</td>
+                                <td>N.A.</td>
+                                <td align="center"><b>BUENO</b></td>
+                                <td align="center"><b>MALO</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center">1</td>
+                                <td><input type="text" name="pro1" value="" /></td>
+                                <td><input type="text" name="mar1" value="" /></td>
+                                <td><input type="text" name="lug1" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica1" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica1" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica1" value="N.C." /></td>
+                                <td><input type="text" name="num1" value="" /></td>
+                                <td><input type="text" name="cer1" value="" /></td>
+                                <td><input type="text" name="val1" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado1" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado1" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot1" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">2</td>
+                                <td><input type="text" name="pro2" value="" /></td>
+                                <td><input type="text" name="mar2" value="" /></td>
+                                <td><input type="text" name="lug2" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica2" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica2" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica2" value="N.C." /></td>
+                                <td><input type="text" name="num2" value="" /></td>
+                                <td><input type="text" name="cer2" value="" /></td>
+                                <td><input type="text" name="val2" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado2" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado2" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot2" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">3</td>
+                                <td><input type="text" name="pro3" value="" /></td>
+                                <td><input type="text" name="mar3" value="" /></td>
+                                <td><input type="text" name="lug3" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica3" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica3" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica3" value="N.C." /></td>
+                                <td><input type="text" name="num3" value="" /></td>
+                                <td><input type="text" name="cer3" value="" /></td>
+                                <td><input type="text" name="val3" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado3" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado3" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot3" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">4</td>
+                                <td><input type="text" name="pro4" value="" /></td>
+                                <td><input type="text" name="mar4" value="" /></td>
+                                <td><input type="text" name="lug4" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica4" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica4" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica4" value="N.C." /></td>
+                                <td><input type="text" name="num4" value="" /></td>
+                                <td><input type="text" name="cer4" value="" /></td>
+                                <td><input type="text" name="val4" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado4" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado4" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot4" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">5</td>
+                                <td><input type="text" name="pro5" value="" /></td>
+                                <td><input type="text" name="mar5" value="" /></td>
+                                <td><input type="text" name="lug5" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica5" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica5" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica5" value="N.C." /></td>
+                                <td><input type="text" name="num5" value="" /></td>
+                                <td><input type="text" name="cer5" value="" /></td>
+                                <td><input type="text" name="val5" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado5" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado5" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot5" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">6</td>
+                                <td><input type="text" name="pro6" value="" /></td>
+                                <td><input type="text" name="mar6" value="" /></td>
+                                <td><input type="text" name="lug6" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica6" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica6" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica6" value="N.C." /></td>
+                                <td><input type="text" name="num6" value="" /></td>
+                                <td><input type="text" name="cer6" value="" /></td>
+                                <td><input type="text" name="val6" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado6" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado6" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot6" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">7</td>
+                                <td><input type="text" name="pro7" value="" /></td>
+                                <td><input type="text" name="mar7" value="" /></td>
+                                <td><input type="text" name="lug7" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica7" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica7" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica7" value="N.C." /></td>
+                                <td><input type="text" name="num7" value="" /></td>
+                                <td><input type="text" name="cer7" value="" /></td>
+                                <td><input type="text" name="val7" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado7" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado7" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot7" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">8</td>
+                                <td><input type="text" name="pro8" value="" /></td>
+                                <td><input type="text" name="mar8" value="" /></td>
+                                <td><input type="text" name="lug8" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica8" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica8" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica8" value="N.C." /></td>
+                                <td><input type="text" name="num8" value="" /></td>
+                                <td><input type="text" name="cer8" value="" /></td>
+                                <td><input type="text" name="val8" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado8" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado8" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot8" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">9</td>
+                                <td><input type="text" name="pro9" value="" /></td>
+                                <td><input type="text" name="mar9" value="" /></td>
+                                <td><input type="text" name="lug9" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica9" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica9" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica9" value="N.C." /></td>
+                                <td><input type="text" name="num9" value="" /></td>
+                                <td><input type="text" name="cer9" value="" /></td>
+                                <td><input type="text" name="val9" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado9" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado9" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot9" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">10</td>
+                                <td><input type="text" name="pro10" value="" /></td>
+                                <td><input type="text" name="mar10" value="" /></td>
+                                <td><input type="text" name="lug10" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica10" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica10" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica10" value="N.C." /></td>
+                                <td><input type="text" name="num10" value="" /></td>
+                                <td><input type="text" name="cer10" value="" /></td>
+                                <td><input type="text" name="val10" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado10" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado10" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot10" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">11</td>
+                                <td><input type="text" name="pro11" value="" /></td>
+                                <td><input type="text" name="mar11" value="" /></td>
+                                <td><input type="text" name="lug11" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica11" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica11" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica11" value="N.C." /></td>
+                                <td><input type="text" name="num11" value="" /></td>
+                                <td><input type="text" name="cer11" value="" /></td>
+                                <td><input type="text" name="val11" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado11" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado11" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot11" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">12</td>
+                                <td><input type="text" name="pro12" value="" /></td>
+                                <td><input type="text" name="mar12" value="" /></td>
+                                <td><input type="text" name="lug12" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica12" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica12" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica12" value="N.C." /></td>
+                                <td><input type="text" name="num12" value="" /></td>
+                                <td><input type="text" name="cer12" value="" /></td>
+                                <td><input type="text" name="val12" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado12" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado12" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot12" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">13</td>
+                                <td><input type="text" name="pro13" value="" /></td>
+                                <td><input type="text" name="mar13" value="" /></td>
+                                <td><input type="text" name="lug13" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica13" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica13" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica13" value="N.C." /></td>
+                                <td><input type="text" name="num13" value="" /></td>
+                                <td><input type="text" name="cer13" value="" /></td>
+                                <td><input type="text" name="val13" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado13" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado13" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot13" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">14</td>
+                                <td><input type="text" name="pro14" value="" /></td>
+                                <td><input type="text" name="mar14" value="" /></td>
+                                <td><input type="text" name="lug14" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica14" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica14" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica14" value="N.C." /></td>
+                                <td><input type="text" name="num14" value="" /></td>
+                                <td><input type="text" name="cer14" value="" /></td>
+                                <td><input type="text" name="val14" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado14" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado14" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot14" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">15</td>
+                                <td><input type="text" name="pro15" value="" /></td>
+                                <td><input type="text" name="mar15" value="" /></td>
+                                <td><input type="text" name="lug15" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica15" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica15" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica15" value="N.C." /></td>
+                                <td><input type="text" name="num15" value="" /></td>
+                                <td><input type="text" name="cer15" value="" /></td>
+                                <td><input type="text" name="val15" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado15" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado15" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot15" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">16</td>
+                                <td><input type="text" name="pro16" value="" /></td>
+                                <td><input type="text" name="mar16" value="" /></td>
+                                <td><input type="text" name="lug16" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica16" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica16" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica16" value="N.C." /></td>
+                                <td><input type="text" name="num16" value="" /></td>
+                                <td><input type="text" name="cer16" value="" /></td>
+                                <td><input type="text" name="val16" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado16" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado16" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot16" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">17</td>
+                                <td><input type="text" name="pro17" value="" /></td>
+                                <td><input type="text" name="mar17" value="" /></td>
+                                <td><input type="text" name="lug17" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica17" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica17" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica17" value="N.C." /></td>
+                                <td><input type="text" name="num17" value="" /></td>
+                                <td><input type="text" name="cer17" value="" /></td>
+                                <td><input type="text" name="val17" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado17" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado17" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot17" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">18</td>
+                                <td><input type="text" name="pro18" value="" /></td>
+                                <td><input type="text" name="mar18" value="" /></td>
+                                <td><input type="text" name="lug18" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica18" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica18" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica18" value="N.C." /></td>
+                                <td><input type="text" name="num18" value="" /></td>
+                                <td><input type="text" name="cer18" value="" /></td>
+                                <td><input type="text" name="val18" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado18" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado18" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot18" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">19</td>
+                                <td><input type="text" name="pro19" value="" /></td>
+                                <td><input type="text" name="mar19" value="" /></td>
+                                <td><input type="text" name="lug19" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica19" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica19" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica19" value="N.C." /></td>
+                                <td><input type="text" name="num19" value="" /></td>
+                                <td><input type="text" name="cer19" value="" /></td>
+                                <td><input type="text" name="val19" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado19" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado19" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot19" value="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td align="center">20</td>
+                                <td><input type="text" name="pro20" value="" /></td>
+                                <td><input type="text" name="mar20" value="" /></td>
+                                <td><input type="text" name="lug20" value="" /></td>
+                                <td align="center"><input type="radio"  name="aplica20" value="Aplica" /></td>
+                                <td align="center"><input type="radio"  name="aplica20" value="A.N.C." /></td>
+                                <td align="center"><input type="radio"  name="aplica20" value="N.C." /></td>
+                                <td><input type="text" name="num20" value="" /></td>
+                                <td><input type="text" name="cer20" value="" /></td>
+                                <td><input type="text" name="val20" value="" /></td>
+                                <td align="center"><input type="radio"  name="estado20" value="Bueno" /></td>
+                                <td align="center"><input type="radio"  name="estado20" value="Malo" /></td>
+                                <td align="center"><input type="text"  name="rot20" value="" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td colspan="2">NOTAS ACLARATORIAS:</td>                                    
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>No se aceptará como certificado de la conformidad con RETIE de la celda o del tablero, solamente el certificado del encerramiento.</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>A partir de enero 1º de 2016, los equipos objeto del presente reglamento y de regulación internacional sobre compatibilidad electromagnética deben marcarse con la clase y grupo de compatibilidad electromagnética, conforme a normas internacionales o equivalentes</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="col-xs-12">
+                        <div class="col-xs-6">
+                            <table border="1">
+                                <tr>
+                                    <td><b>OBSERVACIONES:</b></td>                                    
+                                </tr>
+                                <tr>
+                                    <td><textarea name="obs" style="margin: 0px; width: 564px; height: 64px;">
+                                        </textarea></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-4">
+                            <p><b>CONCEPTO (X):</b></p>
+                            <p><input type="radio" name="concepto" value="Aprobado" />&nbsp;APROBADO</p>
+                            <p><input type="radio" name="concepto" value="No aprobado" />&nbsp;NO APROBADO</p>
+                        </div>
+                        <div class="col-xs-12"> <br />
+                            <table>
+                                <tr>
+                                    <td><b>FIRMA INSPECTOR:</b> _______________________________</td>                                
+                                </tr>
+                            </table>
+                            <br><br> 
+                        </div>
+
+                        <input type="submit" class="btn btn-system" value="ENVIAR"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+<!-- end: .col-md-5-->

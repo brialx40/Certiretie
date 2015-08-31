@@ -1,0 +1,405 @@
+<div class="col-md-12 fondo-blanco"> 
+            <!-- inicio encabezado -->
+             <br><br>
+            <div id="encabezado"  class="col-xs-12">
+
+                <div class="logop col-xs-3">
+                    <a href="#"><img src="../images/photo.jpg"></a>
+                </div>
+                <div class="titulo col-xs-9">
+                    <h3 class="negrita">EVALUACIÓN PRELIMINAR EN EL SITIO PARA EJECUCIÓN DE LA INSPECCIÓN </h3>
+                    <div class="col-xs-12">
+
+                        <p>FECHA:2014-06-20					
+                            &nbsp;&nbsp;	
+                            VERSION:3 			
+                            &nbsp;&nbsp;	
+                            O/PS/R/01-3</p>
+                    </div>	
+                </div>	
+            </div>	
+
+            <form action="./reporte/verificacion_documental.php" method="POST">
+                <!-- inicio  fecha-->
+                <div id="fecha" class="col-xs-12">
+                    <div class="col-xs-4">
+                        <br/>FECHA :&nbsp;<input type="date" name="fechar" /> 
+                    </div>
+                    <div class="col-xs-3"></div>
+
+                    <div class="col-xs-5">
+                        <br>ORDEN SERVICIO N°:
+                        <input type="text" name="orden" />
+                    </div>               
+                </div><!-- /inicio  fecha-->
+                <br><br>
+                <div id="preguntas" class="col-xs-12">
+                    <table border="1">
+                        <tr>
+                            <td colspan="10"><b>DOCUMENTACIÓN CERTIRETIE</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td colspan="2" align="center"><b>APLICA</b></td>
+                            <td colspan="2" align="center"><b>CUMPLE</b></td>
+                            <td colspan="2" align="center"><b>DOCUMENTACIÓN</b></td>                            
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td align="center">SI</td>
+                            <td align="center">NO</td>
+                            <td align="center">SI</td>
+                            <td align="center">NO</td>                           
+                            <td align="center">FISICO</td>
+                            <td align="center">DIGITAL</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>1</b></td>
+                            <td>&nbsp;</td>
+                            <td>PLANEACIÓN DE LA INSPECCIÓN</td>
+                            <td align="center"><input type="radio" name="aplica1" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica1" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple1" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple1" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu1" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu1" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2</b></td>
+                            <td>&nbsp;</td>
+                            <td>ORDEN DE SERVICIO PARA INSPECTOR</td>
+                            <td align="center"><input type="radio" name="aplica2" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica2" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple2" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple2" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu2" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu2" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>3</b></td>
+                            <td>&nbsp;</td>
+                            <td>DECLARACIÓN DE IMPARCIALIDAD</td>
+                            <td align="center"><input type="radio" name="aplica3" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica3" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple3" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple3" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu3" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu3" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>4</b></td>
+                            <td>&nbsp;</td>
+                            <td>LISTAS DE VERIFICACIÓN</td>
+                            <td align="center"><input type="radio" name="aplica4" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica4" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple4" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple4" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu4" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu4" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center"><b>4.1</b></td>
+                            <td>REVISIÓN DEL DISEÑO</td>
+                            <td align="center"><input type="radio" name="aplica41" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica41" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple41" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple41" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu41" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu41" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center"><b>4.2</b></td>
+                            <td>PRUEBAS FUNCIONALES Y MEDICIONES</td>
+                            <td align="center"><input type="radio" name="aplica42" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica42" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple42" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple42" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu42" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu42" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center"><b>4.3</b></td>                            
+                            <td>REVISIÓN DE LA INSTALACIÓN SEGÚN ALCANCE</td>
+                            <td align="center"><input type="radio" name="aplica43" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica43" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple43" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple43" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu43" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu43" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center"><b>4.4</b></td>
+                            <td>CERTIFICADO DEL MATERIAL</td>
+                            <td align="center"><input type="radio" name="aplica44" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica44" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple44" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple44" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu44" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu44" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>5</b></td>
+                            <td>&nbsp;</td>
+                            <td>REPORTE DE NO CONFORMIDADES Y ACTA DE VISITA</td>
+                            <td align="center"><input type="radio" name="aplica5" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica5" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple5" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple5" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu5" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu5" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>6</b></td>
+                            <td>&nbsp;</td>
+                            <td>SATISFACCION DEL CLIENTE</td>
+                            <td align="center"><input type="radio" name="aplica6" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica6" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple6" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple6" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu6" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu6" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>7</b></td>
+                            <td>&nbsp;</td>
+                            <td>EVALUACIÓN PRELIMINAR PARA LA INSPECCIÓN</td>
+                            <td align="center"><input type="radio" name="aplica7" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica7" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple7" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple7" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu7" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu7" value="DIGITAL" /></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table border="1">
+                        <tr>
+                            <td colspan="9"><b>DOCUMENTACIÓN DE LA OBRA</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="9">
+                                <b><span style="color: red">*</span> Nota:</b> Instalaciones energizadas con anterioridad a la vigencia del RETIE o en la 
+                                renovación del dictamen de<br>conformidad no requieren de la declaración del constructor ni los certificados de los productos.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td colspan="2" align="center"><b>APLICA</b></td>
+                            <td colspan="2" align="center"><b>CUMPLE</b></td>
+                            <td colspan="2" align="center"><b>DOCUMENTACIÓN</b></td>                            
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td align="center">SI</td>
+                            <td align="center">NO</td>
+                            <td align="center">SI</td>
+                            <td align="center">NO</td>                           
+                            <td align="center">FÍSICO</td>
+                            <td align="center">DIGITAL</td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>1</b></td>
+                            <td>MEMORIAS DE CALCULO</td>
+                            <td align="center"><input type="radio" name="aplica21" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica21" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple21" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple21" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu21" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu21" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>2</b></td>
+                            <td>PLANOS</td>
+                            <td align="center"><input type="radio" name="aplica22" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica22" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple22" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple22" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu22" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu22" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>3</b></td>
+                            <td>DECLARACIÓN DEL CONSTRUCTOR <span style="color: red">*</span></td>
+                            <td align="center"><input type="radio" name="aplica23" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica23" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple23" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple23" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu23" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu23" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>4</b></td>
+                            <td>CERTIFICADOS DE LOS PRODUCTOS <span style="color: red">*</span></td>
+                            <td align="center"><input type="radio" name="aplica24" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica24" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple24" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple24" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu24" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu24" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>5</b></td>
+                            <td>MATRICULA PROFESIONAL DEL CONSTRUCTOR</td>
+                            <td align="center"><input type="radio" name="aplica25" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica25" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple25" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple25" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu25" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu25" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>6</b></td>
+                            <td>MATRICULA PROFESIONAL DEL DISEÑADOR</td>
+                            <td align="center"><input type="radio" name="aplica26" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica26" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple26" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple26" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu26" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu26" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>7</b></td>
+                            <td>MATRICULA PROFESIONAL DEL INTERVENTOR</td>
+                            <td align="center"><input type="radio" name="aplica27" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica27" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple27" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple27" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu27" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu27" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>8</b></td>
+                            <td>OTROS DOCUMENTOS RELACIONADOS</td>
+                            <td align="center"><input type="radio" name="aplica28" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica28" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple28" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple28" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu28" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu28" value="DIGITAL" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><b>9</b></td>
+                            <td>REGISTRO FOTOGRÁFICO</td>
+                            <td align="center"><input type="radio" name="aplica29" value="SI" /></td>
+                            <td align="center"><input type="radio" name="aplica29" value="NO" /></td>
+                            <td align="center"><input type="radio" name="cumple29" value="SI" /></td>
+                            <td align="center"><input type="radio" name="cumple29" value="NO" /></td>
+                            <td align="center"><input type="radio" name="docu29" value="FISICO" /></td>
+                            <td align="center"><input type="radio" name="docu29" value="DIGITAL" /></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table border="1">
+                        <tr>
+                            <td colspan="7"><b>ESTADO DE LA OBRA</b></td>
+                        </tr>
+                        <tr>
+                            <td>SE VERIFICO EL LEVANTAMIENTO DE LAS NO CONFORMIDADES?:&nbsp;</td>
+                            <td align="center"><input type="radio" name="estado" value="SI" /></td>
+                            <td>Conforme</td>
+                            <td align="center"><input type="radio" name="estado" value="NO" /></td>
+                            <td>No conforme</td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>SE RECOMIENDA PARA ESTA OBRA: </td>
+                            <td align="center"><input type="radio" name="obra" value="Aprobado" /></td>
+                            <td>Aprobar</td>
+                            <td align="center"><input type="radio" name="obra" value="Conforme" /></td>
+                            <td>Condicionar</td>
+                            <td align="center"><input type="radio" name="obra" value="Desaprobado" /></td>
+                            <td>No aprobar</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table border="1">
+                        <tr>
+                            <td><b>OBSERVACIONES</b></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name="obser" rows="4" cols="20"></textarea></td>
+                        </tr>
+                    </table>
+                    <br><br><br>
+                    <table border="1">
+                        <tr>
+                            <td><b>FIRMA INSPECTOR:</b></td>
+                            <td>________________</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table border="1">
+                        <tr>
+                            <td>La información suministrada por el inspector y verificada por auxiliar de inspecciones es:</td>
+                            <td><input type="radio" name="verifica" value="SI"/></td>
+                            <td>Conforme</td>
+                            <td><input type="radio" name="verifica" value="NO"/></td>
+                            <td>No conforme</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"><b>DATOS DEL AUXILIAR DE DOCUMENTACIÓN:</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>NOMBRE: <input type="text" name="auxiliar" value="" /></td>
+                            <td colspan="2">FIRMA:</td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table border="1">
+                        <tr>
+                            <td colspan="3"><b>DECISIÓN DEL ORGANISMO DE INSPECCIÓN</b></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>SI</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>SE VALIDA EL INFORME Y DECISIÓN DE INSPECCIÓN?</td>
+                            <td><input type="radio" name="valida" value="SI" /></td>                            
+                            <td><input type="radio" name="valida" value="NO" /></td>                            
+                        </tr>
+                        <tr>
+                            <td>SE REPORTA A LA AUTORIDAD</td>
+                            <td><input type="radio" name="reportar" value="SI" /></td>                            
+                            <td><input type="radio" name="reportar" value="NO" /></td>                            
+                        </tr>
+                        <tr>
+                            <td>SE RECIBIO ALGUNA OBJECIÓN,  QUEJA O RECLAMO PARA ESTA INSPECCIÓN?</td>
+                            <td><input type="radio" name="queja" value="SI" /></td>                            
+                            <td><input type="radio" name="queja" value="NO" /></td>                            
+                        </tr>
+                        <tr>
+                            <td>LA DECISIÓN DEL ORGANISMO RESPECTO A LA INSPECCIÓN ES :</td>
+                            <td><input type="radio" name="decide" value="Aprobada" /></td>                            
+                            <td><input type="radio" name="decide" value="Desaprobada" /></td>                            
+                        </tr>
+                    </table>
+                    <br><br><br>
+                    <table border="1">
+                        <tr>
+                            <td><b>FIRMA DIRECTOR TECNICO:</b></td>
+                            <td>________________</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+
+                
+
+                <input type="submit" class="btn btn-success" value="ENVIAR"/>
+
+            </form>
+
+        </div>
+
+ 
+<!-- end: .col-md-5-->

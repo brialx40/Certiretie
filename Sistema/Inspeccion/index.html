@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Corlate</title>
+	
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body class="homepage">
+
+    <header id="header" class="borde-inferior">
+        
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo_.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">FORMULARIOS <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                               <li>
+                                    <a  href="#" onclick="MostrarDec()">
+                                        <span class="glyphicon glyphicon-calendar"></span> Declaración de Imparcialidad,<br>
+                                                                                           Independencia, Conflictos de <br>
+                                                                                           Interes y Compromiso de <br>
+                                                                                           Confidencialidad. </a>
+                                </li> 
+                                <li>
+                                    <a onclick="mostrarInspeccion()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span> Plan de Inspeccion </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarorden()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span> Orden de Servicio</a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarverifDoc()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span> verificacion Documental </a>
+                                </li>
+                                <li>
+                                    <a  href="#" onclick="MostrarEvaluacionPre()">
+                                        <span class="glyphicon glyphicon-calendar"></span> Evaluacion Preliminar </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarResMedFun()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span> Resultado de mediciones y pruebas <br>
+                                        funcionales </a>
+                                </li>
+                                 <li>
+                                    <a onclick="mostrarmedicionesCampo()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span> Mediciones campo </a>
+                                </li>
+                                 
+                                 
+                                <li>
+                                    <a onclick="mostrarmateriales()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span> Materiales </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarmediciones()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span> Mediciones </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarusofinalmedica()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span>LISTA DE VERIFICACION PARA INSTALACIONES ELECTRICAS DE USO FINAL</a>
+                                </li>
+                                <li>
+                                    <a onclick="mostraragricoOpecuaria()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span>EDIFICIOS PARA USOS AGRICOLAS Y PECUARIAS</a>
+                                </li>
+                                <li>
+                                    <a onclick="mostraraltaConcentracion()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span>Alta Concetracion-Titulo</a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarclasifiLugaresPelig()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span>CLASIFICACION DE LUGARES PELIGROSOS </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostraredificaPrefab()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span>EDIFICACIONES PREFABRICADAS </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarlistaFinalMinas()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span>COMPROBACION DE NUMERALES PARA EXPEDIR EL 
+                                      DICTAMEN DE CONFORMIDAD EN MINAS SUBTERRANEAS </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarsipra()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span>SISTEMA DE PROTECCION CONTRA RAYOS </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarrayosx()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span>EQUIPOS DE RAYOS X </a>
+                                </li>
+                                <li>
+                                    <a onclick="mostrarusoFinalMinas()" href="#">
+                                        <span class="glyphicon glyphicon-calendar"></span> COMPROBACION DE NUMERALES PARA EXPEDIR EL 
+                                      DICTAMEN DE CONFORMIDAD EN MINAS SUBTERRANEAS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li> 
+                        <li><a href="contact-us.html">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+
+   
+
+    <section id="feature" >
+        <div class="container fondo-blanco borde-content" id="mostrarcontenido">
+          
+        </div><!--/.container-->
+    </section><!--/#feature-->
+
+    
+
+
+
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    Certiretie Ltda.
+                </div>
+                <div class="col-sm-6">
+                   
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+ <script src="js/funciones.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<div class="col-md-12 fondo-blanco"> 
+    <!-- Task Widget -->
+
+    <br><br>
+            <div id="encabezado"  class="col-xs-3">
+
+                <a href="#"><img src="images/photo.jpg"></a>
+            </div>
+            <div class="titulo col-xs-9">
+                <h3 class="negrita">DECLARACION DE IMPARCIALIDAD, INDEPENDENCIA, CONFLICTOS DE INTERESES Y COMPROMISO DE CONFIDENCIALIDAD </h3>
+                <div class="col-xs-12">	
+
+                </div>
+                <div class="col-xs-12">
+                    <div class="text-enc col-xs-5">
+                        <p>FECHA:2014-03-01</p> 					
+                    </div>
+                    <div class="text-enc col-xs-3">					
+                        <p>VERSION:2 </p>				
+                    </div>
+                    <div class="text-enc col-xs-4">					
+                        <p>O/PS/R/01-1</p>
+                    </div>	
+                </div>		
+            </div>
+            <form action="reporte/declaracion.php" method="post">
+                <!-- inicio  fecha-->
+                <div id="fecha" class="col-xs-12">
+                    <div class="col-xs-8">
+                        FECHA : <input type="date" id="fechar" name="fechar" />
+                        <br>
+                        CIUDAD: <input type="text" id="ciudad" name="ciudad" class="tam-textarea"/>
+                    </div>
+
+                    <div class="col-xs-4">
+                        ORDEN SERVICIO N°:
+                        <br><input type="text" id="orden" name="orden" class="tam-textarea"/>
+                    </div>
+                </div>
+                <br>
+
+                <!-- inicio preguntas-->
+                <div id="preguntas" class="margen col-xs-12">
+                    <div class="col-xs-12">
+                        <p align="justify">Se declara bajo gravedad de juramento que: <br>
+                            1.   CERTIRETIE LTDA, su director técnico e inspectores involucrados en la inspección de la instalación eléctrica sujeta a esta orden de servicio cumple con los requisitos exigidos por el Reglamento Técnico de Instalaciones Eléctricas RETIE según resolución  número 90708 de Agosto 30 de 2013.
+                            <br><br>
+                            2.   CERTIRETIE LTDA, su director técnico e inspectores involucrados en la inspección de la instalación eléctrica sujeta a esta orden de servicio:
+                            <br><br>
+                            a. No estamos involucrados ni tenemos relación en ninguna de las siguientes actividades de la inspección como:
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <input type="checkbox"  id="diseno" name="diseno"/> DISEÑADOR <br>
+                        <input type="checkbox"  id="productor" name="productor"/> PRODUCTOR <br>
+                        <input type="checkbox"  id="consultor" name="consultor"/> CONSULTOR <br>
+                        <input type="checkbox"  id="asesor" name="asesor"/> ASESOR <br>
+                        <input type="checkbox"  id="interventor" name="interventor"/> INTERVENTOR <br>
+                        <input type="checkbox"  id="obra" name="obra"/> RESPONSABLE DE LA OBRA <br>
+                        <input type="checkbox"  id="proveedor" name="proveedor"/> PROVEEDOR <br>
+                        <input type="checkbox"  id="instalador" name="instalador"/> INSTALADOR <br>
+                        <input type="checkbox"  id="comprador" name="comprador"/> COMPRADOR <br>
+                        <input type="checkbox"  id="propietario" name="propietario"/> PROPIETARIO <br>
+                        <input type="checkbox"  id="usuario" name="usuario"/> USUARIO <br>
+                        <input type="checkbox"  id="mante" name="mante"/> RESPONSABLE DE MANTENIMIENTO DE LAS INSTALACIONES <br>
+                        <input type="checkbox"  id="autor" name="autor"/> REPRESENTANTE AUTORIZADO DE AMBAS PARTES   <br>
+                    </div>
+
+                    <div class="col-xs-12">
+
+                        <p align="justify"> <br><br>
+                            b.	Somos imparciales para la realización de la inspección.	<br><br>
+                            c.	No incurrimos en conflicto de intereses para la realización de la inspección.<br><br>
+                            d.	Garantizamos la confidencialidad de la información.	<br><br>
+                            e.	No aceptaremos dadivas, regalos, o presiones por parte del cliente o involucrado en la obra.<br><br>	
+                            f.	No seremos discriminatorios durante la ejecución de la inspección.		<br><br>				
+                            g.	Cumpliremos con todos los aspectos indicados en el código de ética de la empresa.<br><br>					
+                        </p>
+                    </div>																							
+                    <p class="negrita">Observaciones:</p>
+                    <div class="col-xs-12">
+                        <textarea class="tam-textarea" id="obser" name="obser"></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" value="ENVIAR"/>
+            </form>
+            <!-- firma 
+            <div id="firma">
+                <div class="col-xs-8">
+                    <br><br>
+                    Gerente:<br>
+
+                    <br>
+                    Firma__________________________________
+                    <input type="text" placeholder="Escriba Nombre" class="tam-textarea"/>
+                </div>
+                <br><br>
+                <div class="col-xs-8">
+                    <br><br>
+                    Director Técnico:<br>
+
+                    <br>
+                    Firma__________________________________
+                    <input type="text" placeholder="Escriba Nombre" class="tam-textarea"/>
+                </div>
+                <br><br>
+                <div class="col-xs-8">
+                    <br><br>
+                    Inspector:<br>
+
+                    <br>
+                    Firma__________________________________
+                    <input type="text" placeholder="Escriba Nombre" class="tam-textarea "/>
+                </div>
+            </div><!-- firma -->
+        </div>
+   
